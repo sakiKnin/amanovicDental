@@ -16,6 +16,20 @@
 
 <script>
 export default {
+
+   head(){
+	return {
+	   title: "Amanović dental",
+	   meta:[
+		{
+		  hid: "description",
+		  name: "description",
+		  content: "Web ordinacija dr. Nedjeljko Amanović"
+
+		}
+	     ]
+	}
+   }
   
 }
 </script>

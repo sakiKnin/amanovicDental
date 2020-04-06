@@ -2,63 +2,43 @@
 <div class="radovi">
   <nav class="menuRadovi" v-bind:class="{'show': getRadoviFlag}">
       <div class="menuRadovi-branding" v-bind:class="{'show': getRadoviFlag}">
-        <div class="portrait"></div>
+        <div v-bind:class="classPicture"></div> 
       </div>
       <ul class="menuRadovi-nav" v-bind:class="{'show': getRadoviFlag}">
         <li class="nav-itemRadovi" v-bind:class="{'show': getRadoviFlag}">
-          <nuxt-link to="/primjerA" class="nav-linkRadovi">
+          <div class="nav-linkRadovi" @click="openPrimjerA()">
             Potpuna keramika
-          </nuxt-link>
+          </div>
         </li>
         <li class="nav-itemRadovi" v-bind:class="{'show': getRadoviFlag}">
-          <nuxt-link to="/primjerB" class="nav-linkRadovi">
+         <div class="nav-linkRadovi" @click="openPrimjerB()">
             Metalkeramički most
-          </nuxt-link>
+         </div>
         </li>
         <li class="nav-itemRadovi" v-bind:class="{'show': getRadoviFlag}">
-          <nuxt-link to="/primjerC" class="nav-linkRadovi">
+          <div class="nav-linkRadovi" @click="openPrimjerC()">
            Metalkeramički most
-          </nuxt-link>
+           </div>
         </li>
         <li class="nav-itemRadovi" v-bind:class="{'show': getRadoviFlag}">
-          <nuxt-link to="/primjerD" class="nav-linkRadovi">
+          <div class="nav-linkRadovi" @click="openPrimjerD()">
             Metalkeramička krunica 
-          </nuxt-link>
+          </div>
         </li>
 	<li class="nav-itemRadovi" v-bind:class="{'show': getRadoviFlag}">
-          <nuxt-link to="/primjerE" class="nav-linkRadovi">
+          <div class="nav-linkRadovi" @click="openPrimjerE()">
             Potpuna keramička krunica
-          </nuxt-link>
+          </div>
         </li>
 	<li class="nav-itemRadovi" v-bind:class="{'show': getRadoviFlag}">
-          <nuxt-link to="/primjerF" class="nav-linkRadovi">
+          <div class="nav-linkRadovi" @click="openPrimjerF()">
             Keramička krunica
-          </nuxt-link>
+          </div>
         </li>
 	<li class="nav-itemRadovi" v-bind:class="{'show': getRadoviFlag}">
-          <nuxt-link to="/primjerG" class="nav-linkRadovi">
+           <div class="nav-linkRadovi" @click="openPrimjerG()">
             Potpuna keramika
-          </nuxt-link>
-        </li>
-	<li class="nav-itemRadovi" v-bind:class="{'show': getRadoviFlag}">
-          <nuxt-link to="/primjerH" class="nav-linkRadovi">
-            Izbjeljivanje
-          </nuxt-link>
-        </li>
-	<li class="nav-itemUsluge" v-bind:class="{'show': getRadoviFlag}">
-          <nuxt-link to="/primjerI" class="nav-linkRadovi">
-            Zubni nakit
-          </nuxt-link>
-        </li>
-	<li class="nav-itemRadovi" v-bind:class="{'show': getRadoviFlag}">
-          <nuxt-link to="/primjerJ" class="nav-linkRadovi">
-            Implantati
-          </nuxt-link>
-        </li>
-	<li class="nav-itemRadovi" v-bind:class="{'show': getRadoviFlag}">
-          <nuxt-link to="/primjerK" class="nav-linkRadovi">
-            Udlage
-          </nuxt-link>
+          </div>
         </li>
       </ul>
     </nav>
@@ -70,6 +50,22 @@
 import { mapGetters } from 'vuex';
 
 export default{
+
+data(){
+	return{
+		classPicture:{
+			portrait: true,
+			primjerA: false,
+			primjerB: false,
+			primjerC: false,
+			primjerD: false,
+			primjerE: false,
+			primjerF: false,
+			primjerG: false
+
+		}
+	}
+},
 
 computed: mapGetters(['getRadoviFlag']),
 
@@ -85,8 +81,89 @@ computed: mapGetters(['getRadoviFlag']),
 		}
 	     ]
 	}
-   }
+   },
+methods:{
 
+	openPrimjerA(){
+		console.log("otvori primjer A");
+		this.classPicture.portrait = false;
+		this.classPicture.primjerA = true;
+		this.classPicture.primjerB = false;
+		this.classPicture.primjerC = false;
+		this.classPicture.primjerD = false;
+		this.classPicture.primjerE = false;
+		this.classPicture.primjerF = false;
+		this.classPicture.primjerG = false;
+		},
+	openPrimjerB(){
+		console.log("otvori primjer B");
+		this.classPicture.portrait = false;
+		this.classPicture.primjerA = false;
+		this.classPicture.primjerB = true;
+		this.classPicture.primjerC = false;
+		this.classPicture.primjerD = false;
+		this.classPicture.primjerE = false;
+		this.classPicture.primjerF = false;
+		this.classPicture.primjerG = false;
+		},
+	openPrimjerC(){
+		console.log("otvori primjer C");
+		this.classPicture.portrait = false;
+		this.classPicture.primjerA = false;
+		this.classPicture.primjerB = false;
+		this.classPicture.primjerC = true;
+		this.classPicture.primjerD = false;
+		this.classPicture.primjerE = false;
+		this.classPicture.primjerF = false;
+		this.classPicture.primjerG = false;
+		},
+	openPrimjerD(){
+		console.log("otvori primjer D");
+		this.classPicture.portrait = false;
+		this.classPicture.primjerA = false;
+		this.classPicture.primjerB = false;
+		this.classPicture.primjerC = false;
+		this.classPicture.primjerD = true;
+		this.classPicture.primjerE = false;
+		this.classPicture.primjerF = false;
+		this.classPicture.primjerG = false;
+		},
+	openPrimjerE(){
+		console.log("otvori primjer E");
+		this.classPicture.portrait = false;
+		this.classPicture.primjerA = false;
+		this.classPicture.primjerB = false;
+		this.classPicture.primjerC = false;
+		this.classPicture.primjerD = false;
+		this.classPicture.primjerE = true;
+		this.classPicture.primjerF = false;
+		this.classPicture.primjerG = false;
+		},
+	openPrimjerF(){
+		console.log("otvori primjer F");
+		this.classPicture.portrait = false;
+		this.classPicture.primjerA = false;
+		this.classPicture.primjerB = false;
+		this.classPicture.primjerC = false;
+		this.classPicture.primjerD = false;
+		this.classPicture.primjerE = false;
+		this.classPicture.primjerF = true;
+		this.classPicture.primjerG = false;
+		},
+	openPrimjerG(){
+		console.log("otvori primjer F");
+		this.classPicture.portrait = false;
+		this.classPicture.primjerA = false;
+		this.classPicture.primjerB = false;
+		this.classPicture.primjerC = false;
+		this.classPicture.primjerD = false;
+		this.classPicture.primjerE = false;
+		this.classPicture.primjerF = false;
+		this.classPicture.primjerG = true;
+		}
+
+
+}
 
 }
 
@@ -100,6 +177,23 @@ $background-opacity: 0.9;
 
 @mixin easeOut {
   transition: all 0.5s ease-out;
+}
+
+.radovi {
+  background: $home-image;
+  background-attachment: fixed;
+  background-size: cover;
+  //background: $primary-color;
+  
+  color: #fff;
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  
+  
+  heagiht: 100%;
+  overflow: hidden;
 }
 
 .menuRadovi {
@@ -155,7 +249,73 @@ $background-opacity: 0.9;
       background: url('~assets/logo.jpg');
       border-radius: 50%;
       border: solid 3px $secondary-color;
+	 
+
     }
+    .primjerA{
+	width: 500px;
+        height: 500px;
+	background: url('~assets/radovi/primjerA.jpg');
+	background-size: cover;
+	 //treba dodati text..
+	 
+
+		}
+    .primjerB{
+	width: 500px;
+        height: 500px;
+	background: url('~assets/radovi/primjerB.jpg');
+	background-size: cover;
+	 //treba dodati text..
+	 
+
+		}
+    .primjerC{
+	width: 500px;
+        height: 500px;
+	background: url('~assets/radovi/primjerC.jpg');
+	background-size: cover;
+	 //treba dodati text..
+	 
+
+		}
+     .primjerD{
+	width: 500px;
+        height: 500px;
+	background: url('~assets/radovi/primjerD.jpg');
+	background-size: cover;
+	 //treba dodati text..
+	 
+
+		}
+      .primjerE{
+	 width: 500px;
+         height: 500px;
+	 background: url('~assets/radovi/primjerE.jpg');
+	 background-size: cover;
+	 //treba dodati text..
+	 
+
+		}
+      .primjerF{
+	 width: 500px;
+         height: 500px;
+	 background: url('~assets/radovi/primjerF.jpg');
+	 background-size: cover;
+	 //treba dodati text..
+	 
+
+		}
+	.primjerG{
+	 width: 500px;
+         height: 500px;
+	 background: url('~assets/radovi/primjerG.jpg');
+	 background-size: cover;
+	 //treba dodati text..
+	 
+
+		}
+	
   }
 
   .nav-itemRadovi {
@@ -173,12 +333,13 @@ $background-opacity: 0.9;
   .nav-linkRadovi {
     display: inline-block;
     position: relative;
-    font-size: 20px;
+    font-size: 25px;
     text-transform: uppercase;
     padding: 0.5rem 0;
     font-weight: 300;
     color: #fff;
     text-decoration: none;
+    cursor: pointer;
     @include easeOut;
 
     &:hover {
@@ -189,7 +350,7 @@ $background-opacity: 0.9;
 }
 
 // Delay each nav item slide by 0.1s
-@for $x from 1 through 11 {
+@for $x from 1 through 18 {
   .nav-itemRadovi:nth-child(#{$x}) {
     transition-delay: $x * 0.1s;
   }

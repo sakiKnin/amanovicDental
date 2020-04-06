@@ -1,5 +1,5 @@
 <template>
-  <div class="layout">
+  <div class="main">
     <appHeader/>
     <nuxt />
   </div>
@@ -18,9 +18,13 @@ components:{
 </script>
 <style lang="scss">
 
-.layout{
- 
+$primary-color: #038cfc;
+$secondary-color: #eece1a; 
+$home-image: url(~assets/background.jpg);
+$background-opacity: 0.9;
 
+.main{
+	padding:0rem;
 
 }
  

@@ -46,6 +46,7 @@ const toggleModule = {
 
 		},
 		setUslugeFlag({commit}, value){
+			console.log("ds",value);
 			this.uslugeFlag = value;
 		 	commit('setUsluge',value)
 

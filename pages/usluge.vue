@@ -67,7 +67,7 @@
 
 <script>
 
-import { mapGetters } from 'vuex';
+import { mapGetters, mapActions } from 'vuex';
 
 export default{
 
@@ -85,8 +85,13 @@ computed: mapGetters(['getUslugeFlag']),
 		}
 	     ]
 	}
-   }
-
+   },
+methods:{
+	changeUsluge(){
+		this.setUslugeFlag(false);
+	},
+	...mapActions(['setUslugeFlag'])
+}
 
 }
 
