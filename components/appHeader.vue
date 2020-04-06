@@ -12,17 +12,17 @@
         <div class="portrait"></div>
       </div>
       <ul class="menu-nav" v-bind:class="{'show': getMenuFlag}">
-        <li class="nav-item" v-bind:class="{'show': getMenuFlag}" @click="toggleMenu()">
+        <li class="nav-item current" v-bind:class="{'show': getMenuFlag}" @click="toggleMenu()">
           <nuxt-link to="/" class="nav-link">
             Naslovna
           </nuxt-link>
         </li>
-        <li class="nav-item" v-bind:class="{'show': getMenuFlag}"  @click="toggleMenu();openUsluge()">
+        <li class="nav-item" v-bind:class="{'show': getMenuFlag}" @click="toggleMenu();openUsluge()">
           <nuxt-link to="/usluge" class="nav-link">
             Usluge
           </nuxt-link>
         </li>
-        <li class="nav-item" v-bind:class="{'show': getMenuFlag}">
+        <li class="nav-item" v-bind:class="{'show': getMenuFlag}" @click="toggleMenu();openRadovi()">
           <nuxt-link to="/radovi" class="nav-link">
             Radovi
           </nuxt-link>
@@ -58,7 +58,10 @@ export default{
 		openUsluge(){
 			this.setUslugeFlag(true);
 		},
-		...mapActions(['setUslugeFlag', 'setMenuFlag'])
+		openRadovi(){
+			this.setRadoviFlag(true);
+		},
+		...mapActions(['setUslugeFlag','setRadoviFlag','setMenuFlag'])
 	}
 
 }
@@ -128,7 +131,7 @@ $background-opacity: 0.9;
   width: 100%;
   opacity: 0.9;
   visibility: hidden;
-
+	
   &.show {
     visibility: visible;
   }
@@ -187,8 +190,10 @@ $background-opacity: 0.9;
       // Slide in from right
       transform: translate3d(0, 0, 0);
     }
-
-   
+	
+     &.current > a {
+      		color: $secondary-color;
+    	}
   }
 
   .nav-link {
@@ -204,7 +209,9 @@ $background-opacity: 0.9;
 
     &:hover {
       color: $secondary-color;
+      transform: scale(1.25);
     }
+    
   }
 }
 

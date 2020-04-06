@@ -1,62 +1,62 @@
 <template>
 <div class="usluge">
   <nav class="menuUsluge" v-bind:class="{'show': getUslugeFlag}">
-      <div class="menu-brandingUsluge" v-bind:class="{'show': getUslugeFlag}">
+      <div class="menuUsluge-branding" v-bind:class="{'show': getUslugeFlag}">
         <div class="portrait"></div>
       </div>
-      <ul class="menu-navUsluge" v-bind:class="{'show': getUslugeFlag}">
+      <ul class="menuUsluge-nav" v-bind:class="{'show': getUslugeFlag}">
         <li class="nav-itemUsluge" v-bind:class="{'show': getUslugeFlag}">
-          <nuxt-link to="/prevencija" class="nav-link">
+          <nuxt-link to="/prevencija" class="nav-linkUsluge">
             Prevencija
           </nuxt-link>
         </li>
         <li class="nav-itemUsluge" v-bind:class="{'show': getUslugeFlag}">
-          <nuxt-link to="/terapijaKarijesa" class="nav-link">
+          <nuxt-link to="/terapijaKarijesa" class="nav-linkUsluge">
             Terapija karijesa
           </nuxt-link>
         </li>
         <li class="nav-itemUsluge" v-bind:class="{'show': getUslugeFlag}">
-          <nuxt-link to="/terapijaIspunom" class="nav-link">
+          <nuxt-link to="/terapijaIspunom" class="nav-linkUsluge">
            Terapija ispunom
           </nuxt-link>
         </li>
         <li class="nav-itemUsluge" v-bind:class="{'show': getUslugeFlag}">
-          <nuxt-link to="/proteze" class="nav-link">
+          <nuxt-link to="/proteze" class="nav-linkUsluge">
             Proteze
           </nuxt-link>
         </li>
 	<li class="nav-itemUsluge" v-bind:class="{'show': getUslugeFlag}">
-          <nuxt-link to="/kruniceMostovi" class="nav-link">
+          <nuxt-link to="/kruniceMostovi" class="nav-linkUsluge">
             Krunice, mostovi
           </nuxt-link>
         </li>
 	<li class="nav-itemUsluge" v-bind:class="{'show': getUslugeFlag}">
-          <nuxt-link to="/ljecenjeZuba" class="nav-link">
+          <nuxt-link to="/ljecenjeZuba" class="nav-linkUsluge">
             Lječenje zuba
           </nuxt-link>
         </li>
 	<li class="nav-itemUsluge" v-bind:class="{'show': getUslugeFlag}">
-          <nuxt-link to="/izbjeljivanje" class="nav-link">
+          <nuxt-link to="/izbjeljivanje" class="nav-linkUsluge">
             Izbjeljivanje
           </nuxt-link>
         </li>
 	<li class="nav-itemUsluge" v-bind:class="{'show': getUslugeFlag}">
-          <nuxt-link to="/rentgen" class="nav-link">
+          <nuxt-link to="/rentgen" class="nav-linkUsluge">
             Rentgen
           </nuxt-link>
         </li>
 	<li class="nav-itemUsluge" v-bind:class="{'show': getUslugeFlag}">
-          <nuxt-link to="/zubniNakit" class="nav-link">
+          <nuxt-link to="/zubniNakit" class="nav-linkUsluge">
             Zubni nakit
           </nuxt-link>
         </li>
 	<li class="nav-itemUsluge" v-bind:class="{'show': getUslugeFlag}">
-          <nuxt-link to="/implantati" class="nav-link">
+          <nuxt-link to="/implantati" class="nav-linkUsluge">
             Implantati
           </nuxt-link>
         </li>
 	<li class="nav-itemUsluge" v-bind:class="{'show': getUslugeFlag}">
-          <nuxt-link to="/udlage" class="nav-link">
+          <nuxt-link to="/udlage" class="nav-linkUsluge">
             Udlage
           </nuxt-link>
         </li>
@@ -95,15 +95,122 @@ computed: mapGetters(['getUslugeFlag']),
 <style lang="scss">
 $primary-color: #038cfc;
 $secondary-color: #eece1a; 
+$home-image: url(~assets/background.jpg);
+$background-opacity: 0.9;
 
 @mixin easeOut {
   transition: all 0.5s ease-out;
 }
 
-.usluge{
+.usluge {
+  color: $home-image;
+  background-attachment: fixed;
+  background-size: cover;
+  //background: $primary-color;
+  
+  //color: #fff;
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  
+  padding: 0rem;
+  heagiht: 100%;
+  overflow: hidden;
 
-	background: $primary-color;
+}
+ 
+.menuUsluge {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.9;
+  visibility: hidden;
+  &.show {
+    visibility: visible;
+  }
 
+  &-branding,
+  &-nav {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    float: right;
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  &-nav {
+    margin: 0;
+    padding: 0;
+    background: darken($primary-color, 5);
+    list-style: none;
+    transform: translate3d(0, -100%, 0);
+    @include easeOut;
+
+    &.show {
+      // Slide in from top
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  // Branding Side
+  &-branding {
+    background: $primary-color;
+    transform: translate3d(0, 100%, 0);
+    @include easeOut;
+
+    &.show {
+      // Slide in from bottom
+      transform: translate3d(0, 0, 0);
+    }
+
+    .portrait {
+      width: 250px;
+      height: 115px;
+      background: url('~assets/logo.jpg');
+      border-radius: 50%;
+      border: solid 3px $secondary-color;
+    }
+  }
+
+  .nav-itemUsluge {
+    transform: translate3d(-600px, 0, 0);
+    @include easeOut;
+
+    &.show {
+      // Slide in from left
+      transform: translate3d(0, 0, 0);
+    }
+
+   
+  }
+
+  .nav-linkUsluge {
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 0.5rem 0;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+    @include easeOut;
+
+    &:hover {
+      color: $secondary-color;
+      transform: scale(1.25);
+    }
+  }
+}
+
+// Delay each nav item slide by 0.1s
+@for $x from 1 through 11 {
+  .nav-itemUsluge:nth-child(#{$x}) {
+    transition-delay: $x * 0.1s;
+  }
 }
 
  

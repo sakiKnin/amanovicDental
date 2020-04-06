@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="layout">
     <appHeader/>
     <nuxt />
   </div>
@@ -17,7 +17,12 @@ components:{
 }
 </script>
 <style lang="scss">
+
+.layout{
  
+
+
+}
  
 
 </style>

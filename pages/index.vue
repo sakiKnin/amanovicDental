@@ -1,5 +1,5 @@
 <template>
-<div class="naslovna"  >
+<div class="naslovna">
    <h1 class="lg-heading">
       Amanović
       <span class="text-secondary">Dental</span>
@@ -39,6 +39,7 @@ $background-opacity: 0.9;
   background-attachment: fixed;
   background-size: cover;
   //background: $primary-color;
+  
   color: #fff;
   height: 100%;
   margin: 0;
@@ -47,7 +48,7 @@ $background-opacity: 0.9;
   
   padding: 4rem;
   heagiht: 100%;
-  overflow:hidden;
+  overflow: hidden;
 }
 
 // Headings
