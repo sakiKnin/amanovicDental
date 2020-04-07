@@ -184,7 +184,7 @@ methods:{
 <style lang="scss">
 $primary-color: #038cfc;
 $secondary-color: #eece1a; 
-$home-image: url(~assets/background.jpg);
+
 @mixin easeOut {
   transition: all 0.5s ease-out;
 }
@@ -197,14 +197,12 @@ $home-image: url(~assets/background.jpg);
 .cjenik{
 	padding: 10vh;
 	background:rgba(lighten($primary-color,5), 0.9);
-	font-weight: 400;
 	color: #fff;
 	.table{
 		display: flex;
-    	flex-flow: column wrap;
-    	align-items: center;
-    	justify-content: center;
-
+    		flex-flow: column wrap;
+    		align-items: center;
+    		justify-content: center;
 		}
 }
  
@@ -243,8 +241,20 @@ $home-image: url(~assets/background.jpg);
  
 }
 // Tablets & Small Laptops
-@media screen and (min-width:501px) and (max-width: 768px){
- 
+@media screen and (max-width: 768px){
+.cjenik{
+	padding: 10vh;
+	background:rgba(lighten($primary-color,5), 0.9);
+	color: #fff;
+	font-size: 0.6rem;
+	.table{
+		display: flex;
+    		flex-flow: column wrap;
+    		align-items: center;
+    		justify-content: center;
+		}
+
+}
  
 
 }

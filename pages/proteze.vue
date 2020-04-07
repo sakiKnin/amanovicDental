@@ -71,7 +71,7 @@ methods:{
 <style lang="scss">
 $primary-color: #038cfc;
 $secondary-color: #eece1a; 
-$home-image: url(~assets/background.jpg);
+
 @mixin easeOut {
   transition: all 0.5s ease-out;
 }
@@ -161,22 +161,62 @@ $home-image: url(~assets/background.jpg);
 
  
 
-.radovi{
-
-	margin:0;
-
-}
  
  
 }
 // Tablets & Small Laptops
-@media screen and (min-width:501px) and (max-width: 768px){
- 
- .prevencija{
+@media screen and (max-width: 768px){
+ .terapijaIspunom{
+	padding: 2vh;
+	font-size: 0.6rem;
+	background: rgba(lighten($primary-color,5),0.9);
+	.opisTerapijeKarijesa{
+		color: #fff;
 
-	margin:0;
+	}
+	.menuTerapijaIspunom{
+		display: grid;
+		grid-gap: 5px;
+		grid-template-areas:
+	   		'protezeImg'
+			'naslovProteze'
+	 		'potpuneProteze'
+			'djelomicneProteze';
+		grid-template-columns: repeat(1, 1fr);
+	
+	 
+	.protezaImg{
+		border-radius: 50%;
+      		border: solid 3px $secondary-color;
+		width: 200px;
+		height: 200px;
+		}
+	.naslovProteze{
+		 background: lighten($primary-color, 5);
+    		 padding: 0.2rem;
+    		 border-bottom: $secondary-color 5px solid;
+		 margin-bottom:0.5rem;
+		 color: #fff;
+		}
+	.potpuneProteze{
+		 background: lighten($primary-color, 5);
+    		 padding: 0.2rem;
+    		 border-bottom: $secondary-color 5px solid;
+		 margin-bottom:0.5rem;
+		 color: #fff;
+		}
+	.djelomicneProteze{
+		 background: lighten($primary-color, 5);
+    		 padding: 0.2rem;
+    		 border-bottom: $secondary-color 5px solid;
+		 margin-bottom:0.5rem;
+		 color: #fff;
+		}
+	 
 
+	}
 }
+ 
 
 }
 

@@ -71,7 +71,7 @@ methods:{
 <style lang="scss">
 $primary-color: #038cfc;
 $secondary-color: #eece1a; 
-$home-image: url(~assets/background.jpg);
+
 @mixin easeOut {
   transition: all 0.5s ease-out;
 }
@@ -167,24 +167,114 @@ $home-image: url(~assets/background.jpg);
 //Smartphones
 @media screen and (max-width: 500px){
 
- 
+.terapijaIspunom{
+	padding: 10vh;
+ 	font-size: 0.6 rem;
+	.menuTerapijaIspunom{
+		display: grid;
+		grid-gap: 5px;
+		grid-template-areas:
+	   		'terapijaIspunomImg'
+			'naslovTerapijaIspunom'
+	 		'amalgamskiIspun'
+			'kompozitniIspun'
+			'cementniIspun'
+			'indirektniIspun';
+		grid-template-columns: repeat(1, 1fr);
+	
+	.terapijaIspunomImg{
+		border-radius: 50%;
+      		border: solid 3px $secondary-color;
+		width: 200px;
+		height: 50px;
+		}
+	.naslovTerapijaIspunom{
+    		 padding: 0.2rem;
+		 margin-bottom:0.5rem;
+		 color: #fff;
+		}
+	.amalgamskiIspun{
+    		 padding: 0.2rem;
+		 margin-bottom:0.5rem;
+		 color: #fff;
+		}
+	.kompozitniIspun{
+		 
+    		 padding: 0.2rem;
+    		 
+		 margin-bottom:0.5rem;
+		 color: #fff;
+		}
+	.cementniIspun{
+    		 padding: 0.2rem;
+		 margin-bottom:0.5rem;
+		 color: #fff;
+		}
+	 .indirektniIspun{
+    		 padding: 0.2rem;
+		 margin-bottom:0.5rem;
+		 color: #fff;
+		}
 
-.radovi{
-
-	margin:0;
-
+	}
 }
  
  
 }
 // Tablets & Small Laptops
-@media screen and (min-width:501px) and (max-width: 768px){
- 
- .prevencija{
+@media screen and (max-width: 768px){
+.terapijaIspunom{
+	padding: 2vh;
+ 	font-size: 0.6 rem;
+	.menuTerapijaIspunom{
+		display: grid;
+		grid-gap: 5px;
+		grid-template-areas:
+	   		'terapijaIspunomImg'
+			'naslovTerapijaIspunom'
+	 		'amalgamskiIspun'
+			'kompozitniIspun'
+			'cementniIspun'
+			'indirektniIspun';
+		grid-template-columns: repeat(1, 1fr);
+	
+	.terapijaIspunomImg{
+		border-radius: 50%;
+      		border: solid 3px $secondary-color;
+		width: 200px;
+		height: 50px;
+		}
+	.naslovTerapijaIspunom{
+    		 padding: 0.2rem;
+		 margin-bottom:0.5rem;
+		 color: #fff;
+		}
+	.amalgamskiIspun{
+    		 padding: 0.2rem;
+		 margin-bottom:0.5rem;
+		 color: #fff;
+		}
+	.kompozitniIspun{
+		 
+    		 padding: 0.2rem;
+    		 
+		 margin-bottom:0.5rem;
+		 color: #fff;
+		}
+	.cementniIspun{
+    		 padding: 0.2rem;
+		 margin-bottom:0.5rem;
+		 color: #fff;
+		}
+	 .indirektniIspun{
+    		 padding: 0.2rem;
+		 margin-bottom:0.5rem;
+		 color: #fff;
+		}
 
-	margin:0;
-
+	}
 }
+ 
 
 }
 

@@ -50,7 +50,6 @@ data(){
 		}
 
 },
-
    head(){
 	return {
 	   title: "Kontakt",
@@ -78,7 +77,6 @@ methods:{
 <style lang="scss">
 $primary-color: #038cfc;
 $secondary-color: #eece1a; 
-$home-image: url(~assets/background.jpg);
 @mixin easeOut {
   transition: all 0.5s ease-out;
 }
@@ -87,7 +85,7 @@ $home-image: url(~assets/background.jpg);
 	padding: 10vh;
 	background: rgba(lighten($primary-color, 5), 0.9);
 	color: #fff;
-
+	height: 100vh;
 	.menuKontakt{
 		display: grid;
 		grid-gap: 10px;
@@ -165,14 +163,52 @@ $home-image: url(~assets/background.jpg);
 //Smartphones
 @media screen and (max-width: 500px){
 
- 
-
- 
- 
- 
 }
 // Tablets & Small Laptops
-@media screen and (min-width:501px) and (max-width: 768px){
+@media screen and (max-width: 768px){
+
+.kontakt{
+	padding: 10vh;
+	background: rgba(lighten($primary-color, 5), 0.9);
+	color: #fff;
+	height: 100%;
+	font-size: 0.6rem;
+	.menuKontakt{
+		display: grid;
+		grid-gap: 5px;
+		grid-template-areas:
+	   		'kartaImg'
+			'kontakt-heading';
+	 
+		grid-template-columns: repeat(1, 1fr);
+	
+	 
+	.kontakt-heading{
+		 background: lighten($primary-color, 5);
+    		 padding: 0.2rem;
+    		 border-bottom: $secondary-color 5px solid;
+		 margin-bottom:0.5rem;
+		 color: #fff;
+		 
+
+		}
+	}
+	.malaKarta{
+		width: 150px;
+        	height: 150px;
+	 
+		}
+	.velikaKarta{
+		width: 200px;
+        	height: 200px;
+	 
+		}
+	.navLink{
+		font-size: 1rem;
+		padding: 0.2rem;
+		 
+		}
+	}
  
  
 

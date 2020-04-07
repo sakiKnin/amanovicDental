@@ -186,28 +186,14 @@ methods:{
 <style lang="scss">
 $primary-color: #038cfc;
 $secondary-color: #eece1a; 
-$home-image: url(~assets/background.jpg);
-$background-opacity: 0.9;
-
+ 
 @mixin easeOut {
   transition: all 0.5s ease-out;
 }
 
 .radovi {
-  background: $home-image;
-  background-attachment: fixed;
-  background-size: cover;
-  //background: $primary-color;
-  
-  color: #fff;
   height: 100%;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.5;
-  
-  
-  heagiht: 100%;
-  overflow: hidden;
 }
 
 .menuRadovi {
@@ -383,30 +369,110 @@ $background-opacity: 0.9;
 //Smartphones
 @media screen and (max-width: 500px){
 
-img{
-height:150px;
-width:100px;
-}
-
-.usluge{
-
-	margin:0;
-
-}
+ 
  
  
 }
 // Tablets & Small Laptops
-@media screen and (min-width:501px) and (max-width: 768px){
- img{
-	height:200px;
-	width:150px;
-	}
- .usluge{
-
-	margin:0;
+@media screen and (max-width: 768px){
+ .radovi{
+	line-height: 0.2;
+	 
 
 }
+
+
+ul.menuRadovi-nav,
+  div.menuRadovi-branding {
+    float: none;
+    width: 100%;
+    min-height: 0;
+
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .menuRadovi-nav {
+    height: 50vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 0.4rem;
+  }
+
+  .menuRadovi-branding {
+    height: 50vh;
+    transform: translate3d(100%, 0, 0);
+
+    .portrait {
+      background: url('~assets/logo_small.jpg');
+      width: 200px;
+      height: 91px;
+    }
+    .primjerA{
+	width: 200px;
+        height: 200px;
+	 
+	 //treba dodati text..
+	 
+
+		}
+    .primjerB{
+	width: 200px;
+        height: 200px;
+	 
+	 //treba dodati text..
+	 
+
+		}
+    .primjerC{
+	width: 200px;
+        height: 200px;
+	 
+	 //treba dodati text..
+	 
+
+		}
+     .primjerD{
+	width: 200px;
+        height: 200px;
+	 
+	 //treba dodati text..
+	 
+
+		}
+      .primjerE{
+	 width: 200px;
+         height: 200px;
+	 
+	 //treba dodati text..
+	 
+
+		}
+      .primjerF{
+	 width: 200px;
+         height: 200px;
+	 
+	 //treba dodati text..
+	 
+
+		}
+	.primjerG{
+	 width: 200px;
+         height: 200px;
+	 
+	 //treba dodati text..
+	 
+
+		}
+	.primjerH{
+	 width: 200px;
+         height: 200px;
+	 
+	 //treba dodati text..
+	 
+
+		}
+  }
 
 }
 

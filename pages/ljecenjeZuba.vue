@@ -57,7 +57,7 @@ methods:{
 <style lang="scss">
 $primary-color: #038cfc;
 $secondary-color: #eece1a; 
-$home-image: url(~assets/background.jpg);
+ 
 @mixin easeOut {
   transition: all 0.5s ease-out;
 }
@@ -65,7 +65,8 @@ $home-image: url(~assets/background.jpg);
 .ljecenjeZuba{
 	padding: 10vh;
 	background: rgba(lighten($primary-color,5),0.9);
-	.opisTerapijeKarijesa{
+	height: 100vh;
+	.opisLjecenjeZuba{
 		color: #fff;
 
 	}
@@ -137,23 +138,52 @@ $home-image: url(~assets/background.jpg);
 
  
 
-.radovi{
-
-	margin:0;
-
-}
+ 
  
  
 }
 // Tablets & Small Laptops
-@media screen and (min-width:501px) and (max-width: 768px){
+@media screen and (max-width: 768px){
+ .ljecenjeZuba{
+	padding: 2vh;
+	font-size: 0.6rem;
+	background: rgba(lighten($primary-color,5),0.9);
+	height: 100vh;
+	.opisLjecenjeZuba{
+		color: #fff;
+
+	}
+	.menuLjecenjeZuba{
+		display: grid;
+		grid-gap: 5px;
+		grid-template-areas:
+	   		'ljecenjeZubaImg'
+			'naslovLjecenjeZuba';
+	 
+		grid-template-columns: repeat(1, 1fr);
+	
+	.ljcenjeZubaImg{
+		display: flex;
+    		justify-content: center;
+	
+		.ciscenjeImg{
+			border-radius: 50%;
+      			border: solid 3px $secondary-color;
+			height: 200px;
+			width: 200px;
+
+			}
+		.punjenjeImg{
+			border-radius: 50%;
+      			border: solid 3px $secondary-color;
+			height: 200px;
+			width: 200px;
+			}
+		}
+	 
+	}
+  }
  
- .prevencija{
-
-	margin:0;
-
-}
-
 }
 
 //Desktops & Laptops

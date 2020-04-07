@@ -100,29 +100,16 @@ methods:{
 <style lang="scss">
 $primary-color: #038cfc;
 $secondary-color: #eece1a; 
-$home-image: url(~assets/background.jpg);
-$background-opacity: 0.9;
 
 @mixin easeOut {
   transition: all 0.5s ease-out;
 }
 
 .usluge {
-  color: $home-image;
-  background-attachment: fixed;
-  background-size: cover;
-  //background: $primary-color;
-  
-  //color: #fff;
   height: 100%;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.5;
-  
   padding: 0rem;
   heagiht: 100%;
-  overflow: hidden;
-
 }
  
 .menuUsluge {
@@ -222,30 +209,48 @@ $background-opacity: 0.9;
 //Smartphones
 @media screen and (max-width: 500px){
 
-img{
-height:150px;
-width:100px;
-}
-
-.usluge{
-
-	margin:0;
-
-}
+ 
  
  
 }
 // Tablets & Small Laptops
-@media screen and (min-width:501px) and (max-width: 768px){
- img{
-	height:200px;
-	width:150px;
-	}
- .usluge{
+@media screen and (max-width: 768px){
 
-	margin:0;
+.usluge{
+	line-height: 0.8;
 
 }
+
+
+ul.menuUsluge-nav,
+  div.menuUsluge-branding {
+    float: none;
+    width: 100%;
+    min-height: 0;
+
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .menuUsluge-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px;
+  }
+
+  .menuUsluge-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0);
+
+    .portrait {
+      background: url('~assets/logo_small.jpg');
+      width: 200px;
+      height: 91px;
+    }
+  }
+
+ 
 
 }
 

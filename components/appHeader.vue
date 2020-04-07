@@ -225,8 +225,34 @@ $background-opacity: 0.9;
   }
 }
 // Tablets & Small Laptops
-@media screen and (min-width:501px) and (max-width: 768px){
- 
+@media screen and (max-width: 768px){
+ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0;
+
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px;
+  }
+
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0);
+
+    .portrait {
+      background: url('~assets/logo_small.jpg');
+      width: 200px;
+      height: 91px;
+    }
+  }
 
 }
 //Desktops & Laptops

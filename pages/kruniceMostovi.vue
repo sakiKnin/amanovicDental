@@ -78,7 +78,7 @@ methods:{
 <style lang="scss">
 $primary-color: #038cfc;
 $secondary-color: #eece1a; 
-$home-image: url(~assets/background.jpg);
+ 
 @mixin easeOut {
   transition: all 0.5s ease-out;
 }
@@ -183,23 +183,80 @@ $home-image: url(~assets/background.jpg);
 @media screen and (max-width: 500px){
 
  
-
-.radovi{
-
-	margin:0;
-
-}
- 
- 
 }
 // Tablets & Small Laptops
-@media screen and (min-width:501px) and (max-width: 768px){
- 
- .prevencija{
+@media screen and (max-width: 768px){
+.kruniceMostovi{
+	font-size: 0.6rem;
+	padding: 2vh;
+	background: rgba(lighten($primary-color,5),0.9);
+	.opisTerapijeKarijesa{
+		color: #fff;
 
-	margin:0;
+	}
+	.menuKruniceMostovi{
+		display: grid;
+		grid-gap: 5px;
+		grid-template-areas:
+	   		'kruniceMostoviImg'
+			'naslovKruniceMostovi'
+	 		'krunice'
+			'mostovi'
+			'fasete'
+			'nadogradnje';
+		grid-template-columns: repeat(1, 1fr);
+	
+	.mostImg{
+		width: 200px;
+		height: 200px;
+		border-radius: 50%;
+      		border: solid 3px $secondary-color;
+		}
+	.krunicaImg{
+		width: 200px;
+		height: 200px;
+		border-radius: 50%;
+      		border: solid 3px $secondary-color;
+		}
+	.naslovKruniceMostovi{
+		 background: lighten($primary-color, 5);
+    		 padding: 0rem;
+    		 border-bottom: $secondary-color 5px solid;
+		 margin-bottom:0.5rem;
+		 color: #fff;
+		}
+	.krunice{
+		 background: lighten($primary-color, 5);
+    		 padding: 0rem;
+    		 border-bottom: $secondary-color 5px solid;
+		 margin-bottom:0.5rem;
+		 color: #fff;
+		}
+	.mostovi{
+		 background: lighten($primary-color, 5);
+    		 padding: 0rem;
+    		 border-bottom: $secondary-color 5px solid;
+		 margin-bottom:0.5rem;
+		 color: #fff;
+		}
+	.fasete{
+		 background: lighten($primary-color, 5);
+    		 padding: 0rem;
+    		 border-bottom: $secondary-color 5px solid;
+		 margin-bottom:0.5rem;
+		 color: #fff;
+		}
+	 .nadogradnje{
+		 background: lighten($primary-color, 5);
+    		 padding: 0rem;
+    		 border-bottom: $secondary-color 5px solid;
+		 margin-bottom:0.5rem;
+		 color: #fff;
+		}
 
+	}
 }
+ 
 
 }
 

@@ -37,7 +37,7 @@ export default {
 <style lang="scss">
 $primary-color: #038cfc;
 $secondary-color: #eece1a; 
-$home-image: url(~assets/background.jpg);
+$home-image: url('~assets/background.jpg');
 $background-opacity: 0.9;
 
 @mixin easeOut {
@@ -48,56 +48,116 @@ $background-opacity: 0.9;
   box-sizing: border-box;
 }
 
-.naslovna {
+body {
   background: $home-image;
   background-attachment: fixed;
   background-size: cover;
-  //background: $primary-color;
-  
-  color: #fff;
+  color: $primary-color;
   height: 100%;
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
-  
-  padding: 4rem;
-  heagiht: 100%;
-  overflow: hidden;
 }
+
+.naslovna {
+  color: #fff;
+  padding: 4rem;
+
 
 // Headings
  
 h1{
   margin: 0;
   font-weight: 400;
-  margin-top:10vh;
+  margin-top: 4vh;
+
   &.lg-heading {
     font-size: 6rem;
+    margin-bottom:-1.2rem;
   }
-
 }
+
+h1::first-letter{
+	font-weight: bold; 
+	}
+h2::first-letter{
+	font-weight: bold;
+	}
 h2.sm-heading {
     font-weight: 400;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     padding: 0.2rem 1rem;
     background: rgba(lighten($primary-color, 2), 0.5);
  
+}
 }
 .text-secondary{
 	color: $secondary-color;
 }
 .icons{
- 	margin-top:30vh;
+ 	 
 	font-size: 2rem;
 	a{
 		color: #fff;
-		padding:0.2rem;
+		 
 		&:hover{
 			@include easeOut;
 			color: $secondary-color;
 			}
 		}
 	}
+//Smartphones
+@media screen and (max-width: 500px){
+.naslovna{
+	align-items: center;
+	text-align: center;
+	.lg-heading{
+		 
+		line-height: 1;
+		margin-bottom: 1rem;
+		}
+	h1.lg-heading{
+		font-size: 4rem;
+	}
+	h1.sm-heading{
+		font-size: 2rem;
+		}
+	
+}
+
  
+}
+// Tablets & Small Laptops
+@media screen and (max-width: 900px){
+.naslovna{
+	align-items: center;
+	text-align: center;
+	.lg-heading{
+		 
+		line-height: 1;
+		margin-bottom: 1rem;
+		}
+	h1.lg-heading{
+		font-size: 4rem;
+	}
+	h1.sm-heading{
+		font-size: 2rem;
+		}
+	
+}
+
+ 
+}
+
+//Desktops & Laptops
+@media screen and (min-width: 901px) and (max-width: 1170px){
+ 
+
+}
+
+//Widescreens
+@media screen and (min-width: 1171px){
+
+}
  
 </style>

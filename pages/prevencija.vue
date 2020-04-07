@@ -77,7 +77,6 @@ methods:{
 <style lang="scss">
 $primary-color: #038cfc;
 $secondary-color: #eece1a; 
-$home-image: url(~assets/background.jpg);
 @mixin easeOut {
   transition: all 0.5s ease-out;
 }
@@ -89,12 +88,10 @@ $home-image: url(~assets/background.jpg);
 }
  
 .headPrevencija{
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	font-weight: 400;
 	padding: 0.2rem;
 	color: #fff;
 	background: rgba(lighten($primary-color,5),0.9);
-	
+	font-weight: 400;
 }
 
 .menuPrevencija{
@@ -190,24 +187,72 @@ p.opis{
 //Smartphones
 @media screen and (max-width: 500px){
 
- 
-
-.radovi{
-
-	margin:0;
-
-}
- 
- 
 }
 // Tablets & Small Laptops
-@media screen and (min-width:501px) and (max-width: 768px){
+@media screen and (max-width: 768px){
+
+.prevencija{
+	padding: 2vh;
+	background: rgba(lighten($primary-color,5),0.9);
+	font-size: 0.6rem;
+
  
- .prevencija{
-
-	margin:0;
-
+.headPrevencija{
+	padding: 0.2rem;
+	color: #fff;
+	background: rgba(lighten($primary-color,5),0.9);
+	
 }
+
+.menuPrevencija{
+	display: grid;
+	grid-gap: 5px;
+	grid-template-areas:
+	   'prevencijaImg'
+	   'naslovPrevencija'
+	   'usluga1'
+	   'usluga2'
+	   'usluga3'
+	   'usluga4';
+	    
+	grid-template-columns: repeat(1, 1fr);
+	
+	 
+	 
+	.usluga{
+		 
+		 margin-bottom:0.5rem;
+		 
+		.naslov{
+			 
+			padding: 0.2rem;
+			}
+
+	}
+	
+	.prevencijaImg{
+		border-radius: 50%;
+      		border: solid 3px $secondary-color;
+		height: 200px;
+		weight: 100px;
+		display: flex;
+    		flex-flow: column wrap;
+    		align-items: center;
+    		justify-content: center;
+
+		}
+	 
+	.naslovPrevencija{
+		font-size: 0.8rem;
+		padding: 0.2rem;
+		 
+		}
+	}
+	.opis{
+		padding:0.3rem;
+
+	} 
+ }
 
 }
 
