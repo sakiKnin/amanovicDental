@@ -377,8 +377,7 @@ $secondary-color: #eece1a;
 @media screen and (max-width: 768px){
  .radovi{
 	line-height: 0.2;
-	 
-
+	font-size: 1rem;
 }
 
 

@@ -1,8 +1,8 @@
 <template>  
  
-<div class="terapijaIspunom">
+<div class="proteze">
 
-<div class="menuTerapijaIspunom">
+<div class="menuProteze">
 <div class="protezeImg">
 <img src="~assets/usluge/proteza1.jpg" class="protezaImg"/>
 <img src="~assets/usluge/proteza2.jpg" class="protezaImg"/>
@@ -80,14 +80,15 @@ $secondary-color: #eece1a;
 	color: $secondary-color;
 
 }
-.terapijaIspunom{
+.proteze{
 	padding: 10vh;
+	height: 100%;
 	background: rgba(lighten($primary-color,5),0.9);
 	.opisTerapijeKarijesa{
 		color: #fff;
 
 	}
-	.menuTerapijaIspunom{
+	.menuProteze{
 		display: grid;
 		grid-gap: 10px;
 		grid-template-areas:
@@ -166,9 +167,9 @@ $secondary-color: #eece1a;
 }
 // Tablets & Small Laptops
 @media screen and (max-width: 768px){
- .terapijaIspunom{
+ .proteze{
 	padding: 2vh;
-	font-size: 0.6rem;
+	font-size: 1rem;
 	background: rgba(lighten($primary-color,5),0.9);
 	.opisTerapijeKarijesa{
 		color: #fff;

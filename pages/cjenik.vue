@@ -243,10 +243,10 @@ $secondary-color: #eece1a;
 // Tablets & Small Laptops
 @media screen and (max-width: 768px){
 .cjenik{
-	padding: 10vh;
+	padding: 2vh;
 	background:rgba(lighten($primary-color,5), 0.9);
 	color: #fff;
-	font-size: 0.6rem;
+	font-size: 1rem;
 	.table{
 		display: flex;
     		flex-flow: column wrap;

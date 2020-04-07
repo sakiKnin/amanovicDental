@@ -132,7 +132,7 @@ $secondary-color: #eece1a;
 
 .zubniNakit{
 	padding: 2vh;
-	font-size: 0.6rem;
+	font-size: 1rem;
 	background: rgba(lighten($primary-color,5),0.9);
 	height: 100vh;
 	.opisRentgen{

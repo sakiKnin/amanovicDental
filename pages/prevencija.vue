@@ -194,7 +194,7 @@ p.opis{
 .prevencija{
 	padding: 2vh;
 	background: rgba(lighten($primary-color,5),0.9);
-	font-size: 0.6rem;
+	font-size: 1rem;
 
  
 .headPrevencija{

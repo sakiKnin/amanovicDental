@@ -146,7 +146,7 @@ $secondary-color: #eece1a;
 @media screen and (max-width: 768px){
  .ljecenjeZuba{
 	padding: 2vh;
-	font-size: 0.6rem;
+	font-size: 1rem;
 	background: rgba(lighten($primary-color,5),0.9);
 	height: 100vh;
 	.opisLjecenjeZuba{
@@ -157,7 +157,7 @@ $secondary-color: #eece1a;
 		display: grid;
 		grid-gap: 5px;
 		grid-template-areas:
-	   		'ljecenjeZubaImg'
+			'ljcenjeZubaImg'
 			'naslovLjecenjeZuba';
 	 
 		grid-template-columns: repeat(1, 1fr);
@@ -169,15 +169,15 @@ $secondary-color: #eece1a;
 		.ciscenjeImg{
 			border-radius: 50%;
       			border: solid 3px $secondary-color;
-			height: 200px;
-			width: 200px;
+			height: 100px;
+			width: 100px;
 
 			}
 		.punjenjeImg{
 			border-radius: 50%;
       			border: solid 3px $secondary-color;
-			height: 200px;
-			width: 200px;
+			height: 100px;
+			width: 100px;
 			}
 		}
 	 

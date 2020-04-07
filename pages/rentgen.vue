@@ -67,6 +67,7 @@ $secondary-color: #eece1a;
 
 .rentgen{
 	padding: 10vh;
+	height: 100%;
 	background: rgba(lighten($primary-color,5),0.9);
 	.opisRentgen{
 		color: #fff;
@@ -139,7 +140,7 @@ $secondary-color: #eece1a;
 @media screen and (max-width: 768px){
  .rentgen{
 	padding: 2vh;
-	font-size: 0.6rem;
+	font-size: 1rem;
 	background: rgba(lighten($primary-color,5),0.9);
 	.opisRentgen{
 		color: #fff;

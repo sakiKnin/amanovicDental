@@ -187,7 +187,7 @@ $secondary-color: #eece1a;
 // Tablets & Small Laptops
 @media screen and (max-width: 768px){
 .kruniceMostovi{
-	font-size: 0.6rem;
+	font-size: 1rem;
 	padding: 2vh;
 	background: rgba(lighten($primary-color,5),0.9);
 	.opisTerapijeKarijesa{

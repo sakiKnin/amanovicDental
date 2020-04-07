@@ -225,7 +225,7 @@ $secondary-color: #eece1a;
 @media screen and (max-width: 768px){
 .terapijaIspunom{
 	padding: 2vh;
- 	font-size: 0.6 rem;
+ 	font-size: 1rem;
 	.menuTerapijaIspunom{
 		display: grid;
 		grid-gap: 5px;

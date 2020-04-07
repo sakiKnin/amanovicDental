@@ -69,6 +69,7 @@ $secondary-color: #eece1a;
 }
 
 .izbjeljivanje{
+	height: 100%;
 	padding: 10vh;
 	background: rgba(lighten($primary-color,5),0.9);
 	.opisIzbjeljivanje{
@@ -144,7 +145,7 @@ $secondary-color: #eece1a;
  
 .izbjeljivanje{
 	padding: 2vh;
-	font-size: 0.6rem;
+	font-size: 1rem;
 	background: rgba(lighten($primary-color,5),0.9);
 	.opisIzbjeljivanje{
 		color: #fff;

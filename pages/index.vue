@@ -8,7 +8,7 @@
     Ordinacija dentalne medicine dr. Nedjeljko Amanović
     </h2>
     <div class="icons">
-      <a href="https://www.facebook.com/nedjeljkoa" target="_blank"><font-awesome-icon :icon="['fab', 'facebook']"/></i></a>
+      <a href="https://www.facebook.com/Ordinacija-dentalne-medicine-dr-Amanovi%C4%87-1530440350600836/" target="_blank"><font-awesome-icon :icon="['fab', 'facebook']"/></i></a>
       <a href="https://www.linkedin.com/in/nedjeljko-amanovic-39552137" target="_blank"><font-awesome-icon :icon="['fab', 'linkedin']"/></i></a>
     </div>
 </div>
@@ -108,28 +108,13 @@ h2.sm-heading {
 	}
 //Smartphones
 @media screen and (max-width: 500px){
-.naslovna{
-	align-items: center;
-	text-align: center;
-	.lg-heading{
-		 
-		line-height: 1;
-		margin-bottom: 1rem;
-		}
-	h1.lg-heading{
-		font-size: 4rem;
-	}
-	h1.sm-heading{
-		font-size: 2rem;
-		}
-	
-}
-
+ 
  
 }
 // Tablets & Small Laptops
 @media screen and (max-width: 900px){
 .naslovna{
+	background-size: cover;
 	align-items: center;
 	text-align: center;
 	.lg-heading{

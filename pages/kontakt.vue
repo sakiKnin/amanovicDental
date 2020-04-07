@@ -168,11 +168,11 @@ $secondary-color: #eece1a;
 @media screen and (max-width: 768px){
 
 .kontakt{
-	padding: 10vh;
+	padding: 2vh;
 	background: rgba(lighten($primary-color, 5), 0.9);
 	color: #fff;
 	height: 100%;
-	font-size: 0.6rem;
+	font-size: 1rem;
 	.menuKontakt{
 		display: grid;
 		grid-gap: 5px;
