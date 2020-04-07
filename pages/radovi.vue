@@ -40,6 +40,11 @@
             Potpuna keramika
           </div>
         </li>
+	<li class="nav-itemRadovi" v-bind:class="{'show': getRadoviFlag}">
+           <div class="nav-linkRadovi" @click="openPrimjerH()">
+            Konzervativni pristup
+          </div>
+        </li>
       </ul>
     </nav>
 </div>
@@ -61,8 +66,8 @@ data(){
 			primjerD: false,
 			primjerE: false,
 			primjerF: false,
-			primjerG: false
-
+			primjerG: false,
+			primjerH: false
 		}
 	}
 },
@@ -85,7 +90,6 @@ computed: mapGetters(['getRadoviFlag']),
 methods:{
 
 	openPrimjerA(){
-		console.log("otvori primjer A");
 		this.classPicture.portrait = false;
 		this.classPicture.primjerA = true;
 		this.classPicture.primjerB = false;
@@ -94,9 +98,9 @@ methods:{
 		this.classPicture.primjerE = false;
 		this.classPicture.primjerF = false;
 		this.classPicture.primjerG = false;
+		this.classPicture.primjerH = false;
 		},
 	openPrimjerB(){
-		console.log("otvori primjer B");
 		this.classPicture.portrait = false;
 		this.classPicture.primjerA = false;
 		this.classPicture.primjerB = true;
@@ -105,9 +109,9 @@ methods:{
 		this.classPicture.primjerE = false;
 		this.classPicture.primjerF = false;
 		this.classPicture.primjerG = false;
+		this.classPicture.primjerH = false;
 		},
 	openPrimjerC(){
-		console.log("otvori primjer C");
 		this.classPicture.portrait = false;
 		this.classPicture.primjerA = false;
 		this.classPicture.primjerB = false;
@@ -116,9 +120,9 @@ methods:{
 		this.classPicture.primjerE = false;
 		this.classPicture.primjerF = false;
 		this.classPicture.primjerG = false;
+		this.classPicture.primjerH = false;
 		},
 	openPrimjerD(){
-		console.log("otvori primjer D");
 		this.classPicture.portrait = false;
 		this.classPicture.primjerA = false;
 		this.classPicture.primjerB = false;
@@ -127,9 +131,9 @@ methods:{
 		this.classPicture.primjerE = false;
 		this.classPicture.primjerF = false;
 		this.classPicture.primjerG = false;
+		this.classPicture.primjerH = false;
 		},
 	openPrimjerE(){
-		console.log("otvori primjer E");
 		this.classPicture.portrait = false;
 		this.classPicture.primjerA = false;
 		this.classPicture.primjerB = false;
@@ -138,9 +142,9 @@ methods:{
 		this.classPicture.primjerE = true;
 		this.classPicture.primjerF = false;
 		this.classPicture.primjerG = false;
+		this.classPicture.primjerH = false;
 		},
 	openPrimjerF(){
-		console.log("otvori primjer F");
 		this.classPicture.portrait = false;
 		this.classPicture.primjerA = false;
 		this.classPicture.primjerB = false;
@@ -149,9 +153,9 @@ methods:{
 		this.classPicture.primjerE = false;
 		this.classPicture.primjerF = true;
 		this.classPicture.primjerG = false;
+		this.classPicture.primjerH = false;
 		},
 	openPrimjerG(){
-		console.log("otvori primjer F");
 		this.classPicture.portrait = false;
 		this.classPicture.primjerA = false;
 		this.classPicture.primjerB = false;
@@ -160,9 +164,19 @@ methods:{
 		this.classPicture.primjerE = false;
 		this.classPicture.primjerF = false;
 		this.classPicture.primjerG = true;
-		}
-
-
+		this.classPicture.primjerH = false;
+		},
+	openPrimjerH(){
+		this.classPicture.portrait = false;
+		this.classPicture.primjerA = false;
+		this.classPicture.primjerB = false;
+		this.classPicture.primjerC = false;
+		this.classPicture.primjerD = false;
+		this.classPicture.primjerE = false;
+		this.classPicture.primjerF = false;
+		this.classPicture.primjerG = false;
+		this.classPicture.primjerH = true;
+		} 
 }
 
 }
@@ -310,6 +324,15 @@ $background-opacity: 0.9;
 	 width: 500px;
          height: 500px;
 	 background: url('~assets/radovi/primjerG.jpg');
+	 background-size: cover;
+	 //treba dodati text..
+	 
+
+		}
+	.primjerH{
+	 width: 500px;
+         height: 500px;
+	 background: url('~assets/radovi/primjerH.jpg');
 	 background-size: cover;
 	 //treba dodati text..
 	 

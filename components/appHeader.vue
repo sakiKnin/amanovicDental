@@ -27,8 +27,8 @@
             Radovi
           </nuxt-link>
         </li>
-        <li class="nav-item" v-bind:class="{'show': getMenuFlag}">
-          <nuxt-link to="/kontakti" class="nav-link">
+        <li class="nav-item" v-bind:class="{'show': getMenuFlag}" @click="toggleMenu();openKontakt()">
+          <nuxt-link to="/kontakt" class="nav-link">
             Kontakt
           </nuxt-link>
         </li>
@@ -61,7 +61,10 @@ export default{
 		openRadovi(){
 			this.setRadoviFlag(true);
 		},
-		...mapActions(['setUslugeFlag','setRadoviFlag','setMenuFlag'])
+		openKontakt(){
+			this.setKontaktFlag(true);
+		},
+		...mapActions(['setMenuFlag','setUslugeFlag','setRadoviFlag','setKontaktFlag'])
 	}
 
 }
