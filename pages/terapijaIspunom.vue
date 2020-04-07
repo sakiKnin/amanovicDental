@@ -102,35 +102,35 @@ $home-image: url(~assets/background.jpg);
 		}
 	.naslovTerapijaIspunom{
 		 background: lighten($primary-color, 5);
-    		 padding: 0rem;
+    		 padding: 0.2rem;
     		 border-bottom: $secondary-color 5px solid;
 		 margin-bottom:0.5rem;
 		 color: #fff;
 		}
 	.amalgamskiIspun{
 		 background: lighten($primary-color, 5);
-    		 padding: 0rem;
+    		 padding: 0.2rem;
     		 border-bottom: $secondary-color 5px solid;
 		 margin-bottom:0.5rem;
 		 color: #fff;
 		}
 	.kompozitniIspun{
 		 background: lighten($primary-color, 5);
-    		 padding: 0rem;
+    		 padding: 0.2rem;
     		 border-bottom: $secondary-color 5px solid;
 		 margin-bottom:0.5rem;
 		 color: #fff;
 		}
 	.cementniIspun{
 		 background: lighten($primary-color, 5);
-    		 padding: 0rem;
+    		 padding: 0.2rem;
     		 border-bottom: $secondary-color 5px solid;
 		 margin-bottom:0.5rem;
 		 color: #fff;
 		}
 	 .indirektniIspun{
 		 background: lighten($primary-color, 5);
-    		 padding: 0rem;
+    		 padding: 0.2rem;
     		 border-bottom: $secondary-color 5px solid;
 		 margin-bottom:0.5rem;
 		 color: #fff;

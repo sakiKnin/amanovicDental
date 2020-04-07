@@ -6,7 +6,7 @@
 <img src="~assets/usluge/terapijaKarijesa.jpg" class="terapijaKarijesaImg"/>
 <div class="naslovTerapijaKarijesa">
 <p class="opisTerapijeKarijesa">
-Karijes je bolest uzrokovana bakterijama u zubnim naslagama (plaku) koja kao rezultat ima destrukciju tvrdog zubnog tkiva i konačno neliječen dovodi do potpunog razaranja zuba, upale pulpe zuba odnosno do kompliciranijih stanja zuba i potpornog tkiva. Posljedice su poremećaj funkcije, estetike, bol...
+<span class="text-secondary">Karijes</span> je bolest uzrokovana bakterijama u zubnim naslagama (plaku) koja kao rezultat ima destrukciju tvrdog zubnog tkiva i konačno neliječen dovodi do potpunog razaranja zuba, upale pulpe zuba odnosno do kompliciranijih stanja zuba i potpornog tkiva. Posljedice su poremećaj funkcije, estetike, bol...
 Karijes je najčešći uzrok oštećenja zuba.
 </p>
 <p class="opisTerapijeKarijesa">
@@ -87,7 +87,7 @@ $home-image: url(~assets/background.jpg);
 		}
 	.naslovTerapijaKarijesa{
 		 background: lighten($primary-color, 5);
-    		 padding: 0rem;
+    		 padding: 0.2rem;
     		 border-bottom: $secondary-color 5px solid;
 		 margin-bottom:0.5rem;
 		 color: #fff;
