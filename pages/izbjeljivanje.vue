@@ -15,7 +15,7 @@ Izbjeljivati se može pojedini zub, najčeće su to zubi koji su promijenili boj
 Izbjeljivanje zuba u ordinaciji se provodi u jednoj ili nekoliko posjeta, pod kontrolom stomatologa i najsigurniji je način izbjeljivanja. Koriste se kemijska sredstva u individualnim udlagama uz zagrijavanje ili osvjetljavanje pomoćnim aparatima.
 </p>
 <p class="opisIzbjeljivanje">
-U našoj ordinaciji koristimo izbjeljivanje u jednoj posjeti ubrzanoh BT cool LED lampom tehnologijom hladnog svjetla sa smanjenim rizikom preosjetljivosti zubi, u samo 30 minuta možete imati bijeli osmjeh.
+U našoj ordinaciji koristimo izbjeljivanje u jednoj posjeti ubrzanom BT cool LED lampom tehnologijom hladnog svjetla sa smanjenim rizikom preosjetljivosti zubi, u samo 30 minuta možete imati bijeli osmjeh.
 </p>
 <p class="opisIzbjeljivanje">
 Izbjeljivanje zuba kod kuće je također moguće, sporije je i obvezno bi se trebalo posavjetovati sa stomatologom. Treba napomenuti da se ne smiju izbjeljivati zubi sa starim i lošim ispunima.

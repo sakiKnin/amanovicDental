@@ -6,7 +6,7 @@
 <img src="~assets/usluge/udlaga.jpg" class="udlageImg"/>
 <div class="naslovUdlage">
 <p class="opisUdlage">
-<span class="text-secondary">Dentalne udlage</span> su skupina dentalnoproteskih pomagala koja se stavljaju preko netaknutog zubnoh niza da bi ispravili ili spriječili oštećenje zuba, zglobova i potpornih struktura.
+<span class="text-secondary">Dentalne udlage</span> su skupina dentalnoproteskih pomagala koja se stavljaju preko netaknutog zubnog niza da bi ispravili ili spriječili oštećenje zuba, zglobova i potpornih struktura.
 </p>
 <p class="opisUdlage">
 Nejčešće korištene udlage su udlage za zaštitu zubi od noćnog škripanja (bruksizma). Velik broj ljudi iz različitih razloga ubrzano troši zubna tkiva kontaktom donjih i gornjih zubi . Najčešće stradaju prednji zubi te se ubrzano troše i lome. Razlozi mogu biti poremećaji u zagrizu (kontaktu među zubima), zglobni poremećaji, psihološki stres. Jednostavna naprava poput nagrizne udlage koja se nosi na gornjim zubima može zaustaviti oštećenje zubi. Udlaga se u ordinaciji dr. Amanovića izrađuje brzo prema otisku zubnog luka te je prozirna lagana i ugodna za nošenje zbog mekanog unutarnjeg sloja.

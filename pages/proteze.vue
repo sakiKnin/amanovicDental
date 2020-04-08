@@ -12,7 +12,7 @@
 Proteze u širem smislu predstavljaju umjetne nadomjeske prirodnim dijelovima tijela.
 </p>
 <p class="opisProteze">
-<span class="text-secondary">Stomatološke proteze</span> predstavljaju nadomjeske zuba i okolnih struktura napravljene od umjetnih materijala, sa ciljem vraćanja funkcije i estetike usne šupljine. Proteze mogu biti fiksne (nepomične u ustima) i mobilne ( pomične, koje se vade). Kada govorimo o protezama u svakodnevnoj komunikaciji sa pacijentima obično se misli na <span class="text-secondary">mobilne proteze</span> tj. proteze koje se mogu vaditi iz usta.
+<span class="text-secondary">Stomatološke proteze</span> predstavljaju nadomjeske zuba i okolnih struktura napravljene od umjetnih materijala, sa ciljem vraćanja funkcije i estetike usne šupljine. Proteze mogu biti fiksne (nepomične u ustima) i mobilne (pomične, koje se vade). Kada govorimo o protezama u svakodnevnoj komunikaciji sa pacijentima obično se misli na <span class="text-secondary">mobilne proteze</span> tj. proteze koje se mogu vaditi iz usta.
 </p>
 <p class="opisProteze">
 Proteze se u Stomatološkoj ordinaciji Amanović izrađuju uz pomoć suvremenih tehnologija koje omoguću gotovo idealnu reprodukciju prirodne funkcije i estetike, slijedeći sva                 
@@ -21,7 +21,7 @@ pravila stomatološke struke.
 </div>
 <div class="potpuneProteze">
 <p class="opisProteze">
-<span class="text-secondary">Potpune ( totalne ) proteze</span> su pomične proteze izrađene od materijala koji imitiraju prirodne zube i okolna tkiva, a nadomještaju potpuni gubitak zuba. Obično su izrađene od akrilata ( plastične) a mogu imati i neka metalna pojačanja.
+<span class="text-secondary">Potpune ( totalne ) proteze</span> su pomične proteze izrađene od materijala koji imitiraju prirodne zube i okolna tkiva, a nadomještaju potpuni gubitak zuba. Obično su izrađene od akrilata (plastične), a mogu imati i neka metalna pojačanja.
 </p>
 </div>
 <div class="djelomicneProteze">

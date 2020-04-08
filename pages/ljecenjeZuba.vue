@@ -4,8 +4,8 @@
 
 <div class="menuLjecenjeZuba">
 <div class="ljcenjeZubaImg">
-<img src="~assets/usluge/ciscenje.jpg" class="ciscenjeImg"/>
-<img src="~assets/usluge/punjenje.jpg" class="punjenjeImg"/>
+<img src="~assets/usluge/ciscenje.jpg" class="ljecenjeImg"/>
+<img src="~assets/usluge/punjenje.jpg" class="ljecenjeImg"/>
 </div>
 <div class="naslovLjecenjeZuba">
 <p class="opisLjecenjeZuba">
@@ -75,25 +75,20 @@ $secondary-color: #eece1a;
 		grid-gap: 10px;
 		grid-template-areas:
 	   		'ljecenjeZubaImg naslovLjecenjeZuba';
-	 
-		grid-template-columns: repeat(2, 1fr);
+	 	grid-template-columns: repeat(2, 1fr);
 	
 	.ljcenjeZubaImg{
 		display: flex;
+		flex-flow: column wrap;
+    		align-items: center;
     		justify-content: center;
-	
-		.ciscenjeImg{
+		padding: 0.2rem;
+		.ljecenjeImg{
 			border-radius: 50%;
       			border: solid 3px $secondary-color;
 			height: 200px;
 			width: 200px;
-
-			}
-		.punjenjeImg{
-			border-radius: 50%;
-      			border: solid 3px $secondary-color;
-			height: 200px;
-			width: 200px;
+			
 			}
 		}
 	.naslovLjecenjeZuba{
@@ -159,27 +154,8 @@ $secondary-color: #eece1a;
 		grid-template-areas:
 			'ljcenjeZubaImg'
 			'naslovLjecenjeZuba';
-	 
-		grid-template-columns: repeat(1, 1fr);
+	 	grid-template-columns: repeat(1, 1fr);
 	
-	.ljcenjeZubaImg{
-		display: flex;
-    		justify-content: center;
-	
-		.ciscenjeImg{
-			border-radius: 50%;
-      			border: solid 3px $secondary-color;
-			height: 100px;
-			width: 100px;
-
-			}
-		.punjenjeImg{
-			border-radius: 50%;
-      			border: solid 3px $secondary-color;
-			height: 100px;
-			width: 100px;
-			}
-		}
 	 
 	}
   }

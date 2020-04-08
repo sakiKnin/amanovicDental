@@ -1,7 +1,7 @@
 {
   "name": "amanovicDental",
   "version": "1.0.0",
-  "description": "Amanovic dental website",
+  "description": "Web ordinacija Amanovic Dental",
   "author": "Boris Saric",
   "private": true,
   "scripts": {

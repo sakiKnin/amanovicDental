@@ -257,6 +257,8 @@ $secondary-color: #eece1a;
         height: 500px;
 	background: url('~assets/radovi/primjerA.jpg');
 	background-size: cover;
+	border-radius: 50%;
+        border: solid 3px $secondary-color;
 	 //treba dodati text..
 	 
 
@@ -266,6 +268,8 @@ $secondary-color: #eece1a;
         height: 500px;
 	background: url('~assets/radovi/primjerB.jpg');
 	background-size: cover;
+	border-radius: 50%;
+        border: solid 3px $secondary-color;
 	 //treba dodati text..
 	 
 
@@ -275,6 +279,8 @@ $secondary-color: #eece1a;
         height: 500px;
 	background: url('~assets/radovi/primjerC.jpg');
 	background-size: cover;
+	border-radius: 50%;
+        border: solid 3px $secondary-color;
 	 //treba dodati text..
 	 
 
@@ -284,6 +290,8 @@ $secondary-color: #eece1a;
         height: 500px;
 	background: url('~assets/radovi/primjerD.jpg');
 	background-size: cover;
+	border-radius: 50%;
+        border: solid 3px $secondary-color;
 	 //treba dodati text..
 	 
 
@@ -293,6 +301,8 @@ $secondary-color: #eece1a;
          height: 500px;
 	 background: url('~assets/radovi/primjerE.jpg');
 	 background-size: cover;
+	 border-radius: 50%;
+         border: solid 3px $secondary-color;
 	 //treba dodati text..
 	 
 
@@ -302,6 +312,8 @@ $secondary-color: #eece1a;
          height: 500px;
 	 background: url('~assets/radovi/primjerF.jpg');
 	 background-size: cover;
+	 border-radius: 50%;
+         border: solid 3px $secondary-color;
 	 //treba dodati text..
 	 
 
@@ -311,6 +323,8 @@ $secondary-color: #eece1a;
          height: 500px;
 	 background: url('~assets/radovi/primjerG.jpg');
 	 background-size: cover;
+	 border-radius: 50%;
+         border: solid 3px $secondary-color;
 	 //treba dodati text..
 	 
 
@@ -320,6 +334,8 @@ $secondary-color: #eece1a;
          height: 500px;
 	 background: url('~assets/radovi/primjerH.jpg');
 	 background-size: cover;
+	 border-radius: 50%;
+         border: solid 3px $secondary-color;
 	 //treba dodati text..
 	 
 

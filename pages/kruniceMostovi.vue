@@ -4,8 +4,8 @@
 
 <div class="menuKruniceMostovi">
 <div class="kruniceMostoviImg">
-<img src="~assets/usluge/most.jpg" class="mostImg"/>
-<img src="~assets/usluge/krunica.jpg" class="krunicaImg"/>
+<img src="~assets/usluge/most.jpg" class="kmImg"/>
+<img src="~assets/usluge/krunica.jpg" class="kmImg"/>
 </div>
 <div class="naslovKruniceMostovi">
 <p class="opisKruniceMostovi">
@@ -103,18 +103,13 @@ $secondary-color: #eece1a;
 			'fasete nadogradnje';
 		grid-template-columns: repeat(2, 1fr);
 	
-	.mostImg{
+	.kmImg{
 		width: 200px;
 		height: 200px;
 		border-radius: 50%;
       		border: solid 3px $secondary-color;
 		}
-	.krunicaImg{
-		width: 200px;
-		height: 200px;
-		border-radius: 50%;
-      		border: solid 3px $secondary-color;
-		}
+	 
 	.naslovKruniceMostovi{
 		 background: lighten($primary-color, 5);
     		 padding: 0rem;
@@ -205,19 +200,19 @@ $secondary-color: #eece1a;
 			'fasete'
 			'nadogradnje';
 		grid-template-columns: repeat(1, 1fr);
-	
-	.mostImg{
-		width: 200px;
-		height: 200px;
-		border-radius: 50%;
-      		border: solid 3px $secondary-color;
-		}
-	.krunicaImg{
-		width: 200px;
-		height: 200px;
-		border-radius: 50%;
-      		border: solid 3px $secondary-color;
-		}
+	.kruniceMostoviImg{
+		display: flex;
+		flex-flow: column wrap;
+    		align-items: center;
+    		justify-content: center;
+		padding: 0.2rem;
+		.kmImg{
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+      			border: solid 3px $secondary-color;
+			}
+	 }
 	.naslovKruniceMostovi{
 		 background: lighten($primary-color, 5);
     		 padding: 0rem;

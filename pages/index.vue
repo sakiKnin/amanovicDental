@@ -19,7 +19,7 @@ export default {
 
    head(){
 	return {
-	   title: "Amanović dental",
+	   title: "Amanović Dental",
 	   meta:[
 		{
 		  hid: "description",
@@ -114,6 +114,7 @@ h2.sm-heading {
 // Tablets & Small Laptops
 @media screen and (max-width: 900px){
 .naslovna{
+	background-attachment: fixed;
 	background-size: cover;
 	align-items: center;
 	text-align: center;

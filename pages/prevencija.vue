@@ -58,7 +58,7 @@ computed: mapGetters(['getUslugeFlag']),
 		{
 		  hid: "description",
 		  name: "description",
-		  content: "Prevencija bolesti zuba"
+		  content: "Prevencija bolesti zuba ordinacije dr. Amanović"
 
 		}
 	     ]
