@@ -142,7 +142,6 @@ $secondary-color: #eece1a;
 .udlage{
 	padding: 2vh;
 	font-size: 1rem;
-	height: 100vh;
 	background: rgba(lighten($primary-color,5),0.9);
 	.opisUdlage{
 		color: #fff;

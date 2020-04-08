@@ -101,11 +101,12 @@ $secondary-color: #eece1a;
     		flex-flow: column wrap;
     		align-items: center;
     		justify-content: center;
+		.protezaImg{
+			border-radius: 50%;
+      			border: solid 3px $secondary-color;
+			}
 		}
-	.protezaImg{
-		border-radius: 50%;
-      		border: solid 3px $secondary-color;
-		}
+	
 	.naslovProteze{
 		 background: lighten($primary-color, 5);
     		 padding: 0.2rem;
@@ -170,12 +171,13 @@ $secondary-color: #eece1a;
  .proteze{
 	padding: 2vh;
 	font-size: 1rem;
+	height: 100%;
 	background: rgba(lighten($primary-color,5),0.9);
 	.opisTerapijeKarijesa{
 		color: #fff;
 
 	}
-	.menuTerapijaIspunom{
+	.menuProteze{
 		display: grid;
 		grid-gap: 5px;
 		grid-template-areas:
@@ -186,12 +188,6 @@ $secondary-color: #eece1a;
 		grid-template-columns: repeat(1, 1fr);
 	
 	 
-	.protezaImg{
-		border-radius: 50%;
-      		border: solid 3px $secondary-color;
-		width: 200px;
-		height: 200px;
-		}
 	.naslovProteze{
 		 background: lighten($primary-color, 5);
     		 padding: 0.2rem;

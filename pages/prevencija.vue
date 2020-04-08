@@ -85,8 +85,6 @@ $secondary-color: #eece1a;
 	padding: 10vh;
 	background: rgba(lighten($primary-color,5),0.9);
 
-}
- 
 .headPrevencija{
 	padding: 0.2rem;
 	color: #fff;
@@ -183,7 +181,7 @@ p.opis{
 	text-align:center;
 }
 
- 
+}
 //Smartphones
 @media screen and (max-width: 500px){
 

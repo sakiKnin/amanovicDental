@@ -83,6 +83,7 @@ $secondary-color: #eece1a;
 .terapijaIspunom{
 	padding: 10vh;
 	background: rgba(lighten($primary-color,5),0.9);
+	height: 100%;
 	.opisTerapijeKarijesa{
 		color: #fff;
 

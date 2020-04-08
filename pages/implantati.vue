@@ -1,36 +1,29 @@
 <template>  
  
 <div class="implantati">
-
+<p class="headImplantati">
+U našoj praksi koristimo dvije vrste implantata kako bi zadovoljili sve potrebe naših pacijenata.
+</p>
 <div class="menuImplantati">
+<div class="implantatiImg">
+<img src="~assets/usluge/octagon.png" class="implantatImg"/>
+</div>
+<div class="naslovImplantati">
+<p class="opisImplantati">
+<span class="text-secondary">Implantati standardnog promjera </span>- dvodijelni implantati Octagon njemačke tvrtke Meisinger Dental Ratio su implantati koje najčešće preporučujemo našim pacijentima. Implantati su proizvedeni u Njemačkoj te dolaze s doživotnom garancijom na implantat i garancijom od 10 godina na protetsku strukturu koja se stavlja na implantat. S obzirom na mogućnosti koje nudi ovaj sustav je pogodan za skoro sve protetske radove u ustima uz pristupačnu cijenu a odličnu njemačku kvalitetu. Jako je važno da se ovi implantati ipak proizvode unutar europske unije te je lako doći do rezervnih dijelova čak i nakon više godina kada ste već zaboravili koji implantati su vam u ustima i kako se zovu vaš doktor će ih identificirati i naručiti nove protetske dijelove ako vam treba novi protetski rad u ustima i to sve u nekoliko dana.
+</p>
+</div>
 <div class="implantatiImg">
 <img src="~assets/usluge/implantat1.jpg" class="implantatImg"/>
 <img src="~assets/usluge/implantat2.jpg" class="implantatImg"/>
 </div>
 <div class="naslovImplantati">
 <p class="opisImplantati">
-Proteze u širem smislu predstavljaju umjetne nadomjeske prirodnim dijelovima tijela.
-</p>
-<p class="opisImplantati">
-<span class="text-secondary">MDI - Mini Dental Implant je sistem tvrtke IMTEC - 3M (USA)</span> baziran na mini implantatima promjera 1,8 do 2,4 mm koji su zahvaljujući malom promjeru višestruko ugodniji za pacijenta prilikom ugradnje, a zahvaljujući pojednostavljenoj proceduri i višestruko jeftiniji od implantata standardnog promjera.
-</p>
-<p class="opisImplantati">
-Prilikom ugradnje standardnih implantata procedura uključuje odvajanje mekog tkiva usne šupljine (zubnog mesa) od kosti te bušenje kosti do promjera 3-6mm a zatim uvijanje implantata i šivanje rane. Posljedica je neugodan i dugotrajan zahvat, sa postoperativnom boli i oteklinom mekih tkiva (i duže od tjedan dana) te dug period zarastanja (3-6 mjeseci) prije protetske opskrbe implantata (ugradnje zuba).
-</p>
-<p class="opisImplantati">
-Zbog malog promjera implantata kod ugradnje <span class="text-secondary">mini MDI implantata</span> nema opsežnog bušenja kosti i odizanja mekog tkiva usta od kosti, već se implantat uvija direktno kroz mali otvor u zubnom mesu, bez odizanja tkiva i opsežnog bušenja kosti. Zahvat se izvodi u lokalnoj anesteziji, te je bezbolan, kratkotrajan i prihvatljiviji za pacijenta. Pacijent odlazi isti dan sa privremenim, potpuno estetski prihvatljivim radom, te kroz nekoliko tjedana završava sa konačnim radom.
-</p>
-<p class="opisImplantati">
-<span class="text-secondary">Mini implantati</span> su iznimno prihvatljivo rješenje za stabilizaciju potpunih proteza, posebno donjih. Pacijenti koji nose potpune donje proteze jako dobro razumiju probleme koje uzrokuje nedovoljna stabilizacija donjih proteza. Zbog toga je veliki postotak pacijenata koji ne nose donje proteze ili su prisiljeni eksperimentirati sa raznim "ljepilima" što dovodi do frustracija. Mini implantati jednostavno u jednom danu rješavaju njihov problem te izlaze iz ordinacije sa nepomičnom donjom protezom koja čvrsto stoji na mjestu.
-</p>
-<p class="opisImplantati">
-Također u odabranim indikacijama mini implantati mogu nositi i pojedinačne krunice - metalkeramičke ili cirkonske, te se lako i povoljno rješava nedostatak pojedinih zuba.
-</p>
-<p class="opisImplantati">
-Sve ostale implantate standardnog promjera i veće radove radimo u suradnji s vrhunskim implantološkim timom njemačke tvrtke <span class="text-secondary">Bredent</span> i s certifikatom za ugradnju implantata
+<span class="text-secondary">Mini implantati pogodni za situacije s jako tankom kosti u čeljusti.</span> Zbog malog promjera implantata kod ugradnje nema opsežnog bušenja kosti i odizanja mekog tkiva , već se implantat uvija direktno kroz mali otvor u zubnom mesu. Zahvat se izvodi u lokalnoj anesteziji, te je bezbolan, kratkotrajan i prihvatljiviji za pacijenta. Pacijent odlazi isti dan sa privremenim, potpuno estetski prihvatljivim radom, te kroz nekoliko tjedana završava sa konačnim radom. Mini implantati su iznimno prihvatljivo rješenje za stabilizaciju potpunih proteza, posebno donjih. Pacijenti koji nose potpune donje proteze jako dobro razumiju probleme koje uzrokuje nedovoljna stabilizacija donjih proteza. Zbog toga je veliki postotak pacijenata koji ne nose donje proteze ili su prisiljeni eksperimentirati sa raznim "ljepilima" što dovodi do frustracija. Mini implantati jednostavno u jednom danu rješavaju njihov problem te izlaze iz ordinacije sa nepomičnom donjom protezom koja čvrsto stoji na mjestu.
 </p>
 </div>
 </div>
+ 
 <div class="button" @click="back()"><div class="buttonName">back</div></div>
 <div class="footer">Copyright &copy; 2020</div>
 </div>
@@ -88,11 +81,16 @@ $home-image: url(~assets/background.jpg);
 		color: #fff;
 
 	}
+	.headImplantati{
+		color: #fff;
+
+		}
 	.menuImplantati{
 		display: grid;
 		grid-gap: 10px;
 		grid-template-areas:
-	   		'implantatiImg naslovImplantati';
+	   		'implantatiImg naslovImplantati'
+			'implantatiImg naslovImplantati';
 		grid-template-columns: repeat(2, 1fr);
 	
 	.implantatiImg{
@@ -105,6 +103,7 @@ $home-image: url(~assets/background.jpg);
       			border: solid 3px $secondary-color;
 		}
 		}
+	 
 	
 	.naslovImplantati{
 		 background: lighten($primary-color, 5);
@@ -113,6 +112,7 @@ $home-image: url(~assets/background.jpg);
 		 margin-bottom:0.5rem;
 		 color: #fff;
 		}
+	 
 	}
 }
  
@@ -159,15 +159,19 @@ $home-image: url(~assets/background.jpg);
 		color: #fff;
 
 	}
+	.headImplantati{
+		margin-top: 10vh;
+		}
 	.menuImplantati{
 		display: grid;
 		grid-gap: 5px;
 		grid-template-areas:
-	   		'implantatiImg'
+			'implantatiImg'
 			'naslovImplantati';
 		grid-template-columns: repeat(1, 1fr);
 	
 	.implantatiImg{
+		padding: 0.2rem;
 		display: flex;
     		flex-flow: column wrap;
     		align-items: center;

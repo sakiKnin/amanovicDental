@@ -142,8 +142,8 @@ $secondary-color: #eece1a;
  .ljecenjeZuba{
 	padding: 2vh;
 	font-size: 1rem;
+	height:100%;
 	background: rgba(lighten($primary-color,5),0.9);
-	height: 100vh;
 	.opisLjecenjeZuba{
 		color: #fff;
 

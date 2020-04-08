@@ -134,8 +134,7 @@ $secondary-color: #eece1a;
 .terapijaKarijesa{
 	padding: 2vh;
 	font-size: 1rem;
-	height: 100vh;
-	 
+	height: 100%;
 	.menuTerapijaKarijesa{
 		display: grid;
 		grid-gap: 5px;

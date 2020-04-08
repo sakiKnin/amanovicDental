@@ -2,12 +2,26 @@
 <div class="radovi">
   <nav class="menuRadovi" v-bind:class="{'show': getRadoviFlag}">
       <div class="menuRadovi-branding" v-bind:class="{'show': getRadoviFlag}">
-        <div v-bind:class="classPicture"></div> 
+        <div v-bind:class="classPicture"></div>
+		<div class="append" v-if="classPicture.primjerA">Metal-keramička krunica - Slučaj slomljenog zuba, nadogradnja
+korijena s metalkeramičkom krunicom</div>
+		<div class="append" v-if="classPicture.primjerB">Metalkeramički most -  Potpuna rehabilitacija gornje čeljusti
+metalkeramičkim mostom</div>
+		<div class="append" v-if="classPicture.primjerC">Bezmetalna keramička krunica -  Promijenjen položaj zuba jednom
+bezmetalnom staklokeramičkom krunicom</div>
+		<div class="append" v-if="classPicture.primjerD">Bezmetalna keramička krunica - Dvije e-max bezmetalne krunice za zub
+koji je promijenio boju i zamjena stare metalkeramičke krunice na
+susjednom zubu</div>
+		<div class="append" v-if="classPicture.primjerE">Bezmetalni cirkonski most - Prednji most od bezmetalne cirkonkeramike
+i krunice od istog materijala na ostalim zubima</div>
+		<div class="append" v-if="classPicture.primjerF">Estetske keramičke ljuskice - Estetske keramičke ljuskice na prednjim
+zubima koje ispravljaju boju, oblik i položaj zubi uz minimalno oštećenje zuba</div>
+		<div class="append" v-if="classPicture.primjerG">Keramička krunica na implantatu - Bezmetalna estetska krunica na implantatu</div>
       </div>
       <ul class="menuRadovi-nav" v-bind:class="{'show': getRadoviFlag}">
         <li class="nav-itemRadovi" v-bind:class="{'show': getRadoviFlag}">
           <div class="nav-linkRadovi" @click="openPrimjerA()">
-            Potpuna keramika
+            Metalkeramička krunica
           </div>
         </li>
         <li class="nav-itemRadovi" v-bind:class="{'show': getRadoviFlag}">
@@ -17,32 +31,27 @@
         </li>
         <li class="nav-itemRadovi" v-bind:class="{'show': getRadoviFlag}">
           <div class="nav-linkRadovi" @click="openPrimjerC()">
-           Metalkeramički most
+           Bezmetalna keramika
            </div>
         </li>
         <li class="nav-itemRadovi" v-bind:class="{'show': getRadoviFlag}">
           <div class="nav-linkRadovi" @click="openPrimjerD()">
-            Metalkeramička krunica 
+            Bezmetalna keramika 
           </div>
         </li>
 	<li class="nav-itemRadovi" v-bind:class="{'show': getRadoviFlag}">
           <div class="nav-linkRadovi" @click="openPrimjerE()">
-            Potpuna keramička krunica
+            Bezmetalni cirkon
           </div>
         </li>
 	<li class="nav-itemRadovi" v-bind:class="{'show': getRadoviFlag}">
           <div class="nav-linkRadovi" @click="openPrimjerF()">
-            Keramička krunica
+            Keramičke ljuskice
           </div>
         </li>
 	<li class="nav-itemRadovi" v-bind:class="{'show': getRadoviFlag}">
            <div class="nav-linkRadovi" @click="openPrimjerG()">
-            Potpuna keramika
-          </div>
-        </li>
-	<li class="nav-itemRadovi" v-bind:class="{'show': getRadoviFlag}">
-           <div class="nav-linkRadovi" @click="openPrimjerH()">
-            Konzervativni pristup
+            Implantat
           </div>
         </li>
       </ul>
@@ -66,8 +75,7 @@ data(){
 			primjerD: false,
 			primjerE: false,
 			primjerF: false,
-			primjerG: false,
-			primjerH: false
+			primjerG: false
 		}
 	}
 },
@@ -98,7 +106,6 @@ methods:{
 		this.classPicture.primjerE = false;
 		this.classPicture.primjerF = false;
 		this.classPicture.primjerG = false;
-		this.classPicture.primjerH = false;
 		},
 	openPrimjerB(){
 		this.classPicture.portrait = false;
@@ -109,7 +116,6 @@ methods:{
 		this.classPicture.primjerE = false;
 		this.classPicture.primjerF = false;
 		this.classPicture.primjerG = false;
-		this.classPicture.primjerH = false;
 		},
 	openPrimjerC(){
 		this.classPicture.portrait = false;
@@ -120,7 +126,6 @@ methods:{
 		this.classPicture.primjerE = false;
 		this.classPicture.primjerF = false;
 		this.classPicture.primjerG = false;
-		this.classPicture.primjerH = false;
 		},
 	openPrimjerD(){
 		this.classPicture.portrait = false;
@@ -131,7 +136,6 @@ methods:{
 		this.classPicture.primjerE = false;
 		this.classPicture.primjerF = false;
 		this.classPicture.primjerG = false;
-		this.classPicture.primjerH = false;
 		},
 	openPrimjerE(){
 		this.classPicture.portrait = false;
@@ -142,7 +146,6 @@ methods:{
 		this.classPicture.primjerE = true;
 		this.classPicture.primjerF = false;
 		this.classPicture.primjerG = false;
-		this.classPicture.primjerH = false;
 		},
 	openPrimjerF(){
 		this.classPicture.portrait = false;
@@ -153,7 +156,7 @@ methods:{
 		this.classPicture.primjerE = false;
 		this.classPicture.primjerF = true;
 		this.classPicture.primjerG = false;
-		this.classPicture.primjerH = false;
+
 		},
 	openPrimjerG(){
 		this.classPicture.portrait = false;
@@ -164,18 +167,6 @@ methods:{
 		this.classPicture.primjerE = false;
 		this.classPicture.primjerF = false;
 		this.classPicture.primjerG = true;
-		this.classPicture.primjerH = false;
-		},
-	openPrimjerH(){
-		this.classPicture.portrait = false;
-		this.classPicture.primjerA = false;
-		this.classPicture.primjerB = false;
-		this.classPicture.primjerC = false;
-		this.classPicture.primjerD = false;
-		this.classPicture.primjerE = false;
-		this.classPicture.primjerF = false;
-		this.classPicture.primjerG = false;
-		this.classPicture.primjerH = true;
 		} 
 }
 
@@ -250,8 +241,11 @@ $secondary-color: #eece1a;
       border-radius: 50%;
       border: solid 3px $secondary-color;
 	 
-
     }
+    .append{
+		color: $secondary-color;
+		text-align: center;
+	}
     .primjerA{
 	width: 500px;
         height: 500px;
@@ -259,9 +253,6 @@ $secondary-color: #eece1a;
 	background-size: cover;
 	border-radius: 50%;
         border: solid 3px $secondary-color;
-	 //treba dodati text..
-	 
-
 		}
     .primjerB{
 	width: 500px;
@@ -270,9 +261,6 @@ $secondary-color: #eece1a;
 	background-size: cover;
 	border-radius: 50%;
         border: solid 3px $secondary-color;
-	 //treba dodati text..
-	 
-
 		}
     .primjerC{
 	width: 500px;
@@ -281,9 +269,6 @@ $secondary-color: #eece1a;
 	background-size: cover;
 	border-radius: 50%;
         border: solid 3px $secondary-color;
-	 //treba dodati text..
-	 
-
 		}
      .primjerD{
 	width: 500px;
@@ -292,9 +277,6 @@ $secondary-color: #eece1a;
 	background-size: cover;
 	border-radius: 50%;
         border: solid 3px $secondary-color;
-	 //treba dodati text..
-	 
-
 		}
       .primjerE{
 	 width: 500px;
@@ -303,9 +285,6 @@ $secondary-color: #eece1a;
 	 background-size: cover;
 	 border-radius: 50%;
          border: solid 3px $secondary-color;
-	 //treba dodati text..
-	 
-
 		}
       .primjerF{
 	 width: 500px;
@@ -314,9 +293,6 @@ $secondary-color: #eece1a;
 	 background-size: cover;
 	 border-radius: 50%;
          border: solid 3px $secondary-color;
-	 //treba dodati text..
-	 
-
 		}
 	.primjerG{
 	 width: 500px;
@@ -325,22 +301,8 @@ $secondary-color: #eece1a;
 	 background-size: cover;
 	 border-radius: 50%;
          border: solid 3px $secondary-color;
-	 //treba dodati text..
-	 
-
 		}
-	.primjerH{
-	 width: 500px;
-         height: 500px;
-	 background: url('~assets/radovi/primjerH.jpg');
-	 background-size: cover;
-	 border-radius: 50%;
-         border: solid 3px $secondary-color;
-	 //treba dodati text..
 	 
-
-		}
-	
   }
 
   .nav-itemRadovi {
@@ -392,7 +354,7 @@ $secondary-color: #eece1a;
 // Tablets & Small Laptops
 @media screen and (max-width: 768px){
  .radovi{
-	line-height: 0.2;
+	line-height: 0.4;
 	font-size: 1rem;
 }
 
@@ -423,6 +385,10 @@ ul.menuRadovi-nav,
       width: 200px;
       height: 91px;
     }
+     .append{
+	line-height: 1;
+
+	}
     .primjerA{
 	width: 200px;
         height: 200px;
