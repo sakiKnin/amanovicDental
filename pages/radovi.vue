@@ -54,6 +54,11 @@ zubima koje ispravljaju boju, oblik i položaj zubi uz minimalno oštećenje zub
             Implantat
           </div>
         </li>
+	<li class="nav-itemRadovi" v-bind:class="{'show': getRadoviFlag}">
+           <div class="nav-linkRadovi current" @click="home()">
+            Naslovna
+          </div>
+        </li>
       </ul>
     </nav>
 </div>
@@ -167,7 +172,10 @@ methods:{
 		this.classPicture.primjerE = false;
 		this.classPicture.primjerF = false;
 		this.classPicture.primjerG = true;
-		} 
+		},
+	home(){
+		this.$router.push('/');
+		}
 }
 
 }
@@ -313,7 +321,7 @@ $secondary-color: #eece1a;
       // Slide in from left
       transform: translate3d(0, 0, 0);
     }
-
+    
    
   }
 
@@ -328,7 +336,9 @@ $secondary-color: #eece1a;
     text-decoration: none;
     cursor: pointer;
     @include easeOut;
-
+    &.current{
+      		color: $secondary-color;
+    	}
     &:hover {
       color: $secondary-color;
       transform: scale(1.25);
@@ -337,7 +347,7 @@ $secondary-color: #eece1a;
 }
 
 // Delay each nav item slide by 0.1s
-@for $x from 1 through 18 {
+@for $x from 1 through 8 {
   .nav-itemRadovi:nth-child(#{$x}) {
     transition-delay: $x * 0.1s;
   }
@@ -387,71 +397,38 @@ ul.menuRadovi-nav,
     }
      .append{
 	line-height: 1;
-
 	}
     .primjerA{
 	width: 200px;
         height: 200px;
-	 
-	 //treba dodati text..
-	 
-
 		}
     .primjerB{
 	width: 200px;
         height: 200px;
-	 
-	 //treba dodati text..
-	 
-
 		}
     .primjerC{
 	width: 200px;
         height: 200px;
-	 
-	 //treba dodati text..
-	 
-
 		}
      .primjerD{
 	width: 200px;
         height: 200px;
-	 
-	 //treba dodati text..
-	 
-
 		}
       .primjerE{
 	 width: 200px;
          height: 200px;
-	 
-	 //treba dodati text..
-	 
-
 		}
       .primjerF{
 	 width: 200px;
          height: 200px;
-	 
-	 //treba dodati text..
-	 
-
 		}
 	.primjerG{
 	 width: 200px;
          height: 200px;
-	 
-	 //treba dodati text..
-	 
-
 		}
 	.primjerH{
 	 width: 200px;
          height: 200px;
-	 
-	 //treba dodati text..
-	 
-
 		}
   }
 

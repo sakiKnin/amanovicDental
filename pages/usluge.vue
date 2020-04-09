@@ -60,6 +60,11 @@
             Udlage
           </nuxt-link>
         </li>
+	<li class="nav-itemUsluge current" v-bind:class="{'show': getUslugeFlag}">
+          <nuxt-link to="/" class="nav-linkUsluge">
+            Naslovna
+          </nuxt-link>
+        </li>
       </ul>
     </nav>
 </div>
@@ -175,8 +180,10 @@ $secondary-color: #eece1a;
     &.show {
       // Slide in from left
       transform: translate3d(0, 0, 0);
-    }
-
+    	}
+	 &.current > a{
+      		color: $secondary-color;
+    	}
    
   }
 
@@ -199,7 +206,7 @@ $secondary-color: #eece1a;
 }
 
 // Delay each nav item slide by 0.1s
-@for $x from 1 through 11 {
+@for $x from 1 through 12 {
   .nav-itemUsluge:nth-child(#{$x}) {
     transition-delay: $x * 0.1s;
   }
