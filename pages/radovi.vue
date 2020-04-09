@@ -54,11 +54,6 @@ zubima koje ispravljaju boju, oblik i položaj zubi uz minimalno oštećenje zub
             Implantat
           </div>
         </li>
-	<li class="nav-itemRadovi" v-bind:class="{'show': getRadoviFlag}">
-           <div class="nav-linkRadovi current" @click="home()">
-            Naslovna
-          </div>
-        </li>
       </ul>
     </nav>
 </div>
@@ -172,10 +167,7 @@ methods:{
 		this.classPicture.primjerE = false;
 		this.classPicture.primjerF = false;
 		this.classPicture.primjerG = true;
-		},
-	home(){
-		this.$router.push('/');
-		}
+		} 
 }
 
 }
@@ -336,9 +328,7 @@ $secondary-color: #eece1a;
     text-decoration: none;
     cursor: pointer;
     @include easeOut;
-    &.current{
-      		color: $secondary-color;
-    	}
+   
     &:hover {
       color: $secondary-color;
       transform: scale(1.25);
@@ -347,7 +337,7 @@ $secondary-color: #eece1a;
 }
 
 // Delay each nav item slide by 0.1s
-@for $x from 1 through 8 {
+@for $x from 1 through 7 {
   .nav-itemRadovi:nth-child(#{$x}) {
     transition-delay: $x * 0.1s;
   }

@@ -2,6 +2,7 @@ const toggleModule = {
 
 	state: {
 		menuFlag: false,
+		naslovnaFlag: false,
 		uslugeFlag: false,
 		radoviFlag: false,
 		kontaktFlag: false,
@@ -11,6 +12,7 @@ const toggleModule = {
 	getters: {
 		
 		getMenuFlag: (state) => state.menuFlag,
+		getNaslovnaFlag: (state) => state.naslovnaFlag,
 		getUslugeFlag: (state) => state.uslugeFlag,
 		getRadoviFlag: (state) => state.radoviFlag,
 		getKontaktFlag: (state) => state.kontaktFlag
@@ -19,6 +21,14 @@ const toggleModule = {
 	actions: {
 		
 		setMenuFlag({commit}){
+
+			if(this.stateBefore=="naslovna"&&this.menuFlag==true){
+				this.naslovnaFlag=true;
+				commit('setNaslovna', true);
+			}else if(this.naslovnaFlag==true&&this.menuFlag==false){
+				this.naslovnaFlag = false;
+				commit('setNaslovna', false)
+				}
 
 			if(this.stateBefore=="usluge"&&this.menuFlag==true){
 				this.uslugeFlag=true;
@@ -48,6 +58,12 @@ const toggleModule = {
 			commit('setMenu', this.menuFlag)
 
 		},
+		setNaslovnaFlag({commit}, value){
+			this.stateBefore = "naslovna";
+			this.naslovnaFlag = value;
+			console.log("naslovna flag:", this.naslovnaFlag);
+		 	commit('setNaslovna',value);
+		},
 		setUslugeFlag({commit}, value){
 			this.stateBefore = "usluge";
 			this.uslugeFlag = value;
@@ -67,6 +83,7 @@ const toggleModule = {
 	},
 	mutations: {
 		setMenu: (state, menuFlag) => (state.menuFlag = menuFlag),
+		setNaslovna: (state, naslovnaFlag) => (state.naslovnaFlag = naslovnaFlag),
 		setUsluge: (state, uslugeFlag) => (state.uslugeFlag = uslugeFlag),
 		setRadovi: (state, radoviFlag) => (state.radoviFlag = radoviFlag),
 		setKontakt: (state, kontaktFlag) => (state.kontaktFlag = kontaktFlag)

@@ -6,13 +6,15 @@
       <div class="btn-line"></div>
       <div class="btn-line"></div>
     </div>
-
+	
+    <div class="homeBtn" v-bind:class="{'show': getUslugeFlag||getRadoviFlag||getKontaktFlag||!getNaslovnaFlag}" @click="home()"><font-awesome-icon :icon="['fas', 'home']"/></i></div>
+			 
     <nav class="menu" v-bind:class="{'show': getMenuFlag}">
       <div class="menu-branding" v-bind:class="{'show': getMenuFlag}">
         <div class="portrait"></div>
       </div>
       <ul class="menu-nav" v-bind:class="{'show': getMenuFlag}">
-        <li class="nav-item current" v-bind:class="{'show': getMenuFlag}" @click="toggleMenu()">
+        <li class="nav-item current" v-bind:class="{'show': getMenuFlag}" @click="toggleMenu(); openNaslovna()">
           <nuxt-link to="/" class="nav-link">
             Naslovna
           </nuxt-link>
@@ -44,7 +46,7 @@ import { mapGetters, mapActions } from 'vuex';
 export default{
 	name: 'appHeader',
 
-	computed: mapGetters(['getUslugeFlag', 'getMenuFlag']),
+	computed: mapGetters(['getMenuFlag', 'getNaslovnaFlag','getUslugeFlag', 'getRadoviFlag', 'getKontaktFlag']),
 
 	data(){
 		return{
@@ -55,16 +57,30 @@ export default{
 		toggleMenu(){
 			this.setMenuFlag();
 		},
+		openNaslovna(){
+			this.setNaslovnaFlag(true);
+			 
+			
+		},
 		openUsluge(){
+			 
 			this.setUslugeFlag(true);
+			 
 		},
 		openRadovi(){
+			 
 			this.setRadoviFlag(true);
+			 
 		},
 		openKontakt(){
+			 
 			this.setKontaktFlag(true);
 		},
-		...mapActions(['setMenuFlag','setUslugeFlag','setRadoviFlag','setKontaktFlag'])
+		home(){
+			this.$router.push('/');	
+			 
+		},
+		...mapActions(['setMenuFlag','setNaslovnaFlag','setUslugeFlag','setRadoviFlag','setKontaktFlag'])
 	}
 
 }
@@ -86,6 +102,32 @@ $background-opacity: 0.9;
 	position: fixed;
 	z-index: 2;
 	width: 100%
+}
+
+.homeBtn{
+	display: flex;
+	position: absolute;
+	z-index: 3;
+	right: 36px;
+	top: 63px;
+	cursor: pointer;
+	color: #fff;
+	padding: 2px;
+	background: rgba(lighten($primary-color,5), 0.9);
+	border-radius: 50%;
+      	border: solid 1px $secondary-color;
+	transform: translate3d(600px,0,0);
+	@include easeOut;
+	&.show{
+		transform: translate3d(0,0,0);
+		}
+	&:hover{
+		@include easeOut;
+		color: $secondary-color;
+		transform: scale(1.25);
+		}
+
+
 }
 
 .menu-btn {

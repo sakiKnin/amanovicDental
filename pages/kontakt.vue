@@ -17,7 +17,6 @@
 	<div><span class="text-secondary">Uto, Čet, Pet:</span> 07:00 - 14:30</div> 
 	<div><span class="text-secondary">Subotom:</span> 07:00 - 12:00  (prva subota u mjesecu)</div>
 </div>
-<div class="button" @click="home()"><div class="buttonName">Naslovna</div></div>
 <div class="footer">Copyright &copy; 2020</div>
 </div>
 </template>
@@ -58,14 +57,8 @@ methods:{
 	 togglePic(){
 		 this.classKarta.malaKarta=!this.classKarta.malaKarta;
 		 this.classKarta.velikaKarta=!this.classKarta.velikaKarta;		
-		},
-	 home(){
-		console.log("naslovna button")
-		this.$router.push('/');
-
-		}
+		} 
 	}
-
 }
 
 </script>
