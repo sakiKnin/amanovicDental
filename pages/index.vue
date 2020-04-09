@@ -20,7 +20,7 @@
       <a href="https://www.linkedin.com/in/nedjeljko-amanovic-39552137" target="_blank"><font-awesome-icon :icon="['fab', 'linkedin']"/></i></a>
     </div>
      <div class="novosti">
-	<marquee scrolldelay="60">Sve vrste implantata i implantoproetskih radova radimo u suradnji s vrhunskim kirurškim timom njemačke tvrtke Bredent</marquee>
+	<marquee scrolldelay="60">&#128968 Sve vrste implantata i implantoproetskih radova radimo u suradnji s vrhunskim kirurškim timom njemačke tvrtke Bredent &#128968 Izbjeljivanje BT COOL led lampom, potpuno sigurno bez zagrijavanja, brzo i efikasno do bijelog osmjeha &#128968 IPS e.max - potpune staklokeramičke krunice i ljuskice za vrhunsku estetiku &#128968 MDI Implant System - Mini dentalni implantati za stabilizaciu proteza i pojedinačne zube &#128968 </marquee>
      </div>
       <div class="rotateLogo">
     		<a href="http://ordinacija-amanovic.hr/" target="_blank" class="logo"> </a>

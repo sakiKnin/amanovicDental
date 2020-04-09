@@ -4,7 +4,8 @@ const toggleModule = {
 		menuFlag: false,
 		uslugeFlag: false,
 		radoviFlag: false,
-		kontaktFlag: false
+		kontaktFlag: false,
+		stateBefore: "none" 
 
 	},
 	getters: {
@@ -18,49 +19,49 @@ const toggleModule = {
 	actions: {
 		
 		setMenuFlag({commit}){
-			console.log(this.uslugeFlag);
-			if((this.radoviFlag==false||this.radoviFlag==undefined)&&(this.kontaktFlag==false||this.kontaktFlag==undefined)&&this.menuFlag==true){
 
-					this.uslugeFlag = true;
-					commit('setUsluge',true);
-
-				}
-			if((this.kontaktFlag==false||this.kontaktFlag==undefined)&&this.menuFlag==true){
-
-					this.radoviFlag = true;
-					commit('setRadovi',true);
-
-				}
-		
-			if(this.uslugeFlag==true&&this.menuFlag==false){
+			if(this.stateBefore=="usluge"&&this.menuFlag==true){
+				this.uslugeFlag=true;
+				commit('setUsluge', true);
+			}else if(this.uslugeFlag==true&&this.menuFlag==false){
 				this.uslugeFlag = false;
-				commit('setUsluge', false);
-			}
-			if(this.radoviFlag==true&&this.menuFlag==false){
-				this.radoviFlag = false;
-				commit('setRadovi', false);
-
+				commit('setUsluge', false)
 				}
+
+			if(this.stateBefore=="radovi"&&this.menuFlag==true){
+				this.radoviFlag=true;
+				commit('setRadovi', true);
+			}else if(this.radoviFlag==true&&this.menuFlag==false){
+				this.radoviFlag = false;
+				commit('setRadovi', false)
+				}
+			
+			if(this.stateBefore=="kontakt"&&this.menuFlag==true){
+				this.kontaktFlag=true;
+				commit('setKontakt', true);
+			}else if(this.kontaktFlag==true&&this.menuFlag==false){
+				this.kontaktFlag = false;
+				commit('setKontakt', false)
+				}
+
 			this.menuFlag=!this.menuFlag;
 			commit('setMenu', this.menuFlag)
 
 		},
 		setUslugeFlag({commit}, value){
-			console.log("ds",value);
+			this.stateBefore = "usluge";
 			this.uslugeFlag = value;
-		 	commit('setUsluge',value)
-
+		 	commit('setUsluge',value);
 		},
 		setRadoviFlag({commit}, value){
-			console.log("value radovi:",value);
+			this.stateBefore = "radovi";
 			this.radoviFlag = value;
-		 	commit('setRadovi', value)
-
+		 	commit('setRadovi', value);
 		},
 		setKontaktFlag({commit}, value){
+			this.stateBefore = "kontakt";
 			this.kontaktFlag = value;
-		 	commit('setKontakt',value)
-
+		 	commit('setKontakt', value);
 		}
 
 	},

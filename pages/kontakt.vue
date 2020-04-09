@@ -1,5 +1,5 @@
 <template>  
-<div class="kontakt">
+<div class="kontakt" v-if="getKontaktFlag">
 <div class="menuKontakt">
 <div class="kartaImage">
 <div v-bind:class="classKarta" @click="togglePic()"></div>
