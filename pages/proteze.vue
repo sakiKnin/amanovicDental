@@ -26,7 +26,7 @@ pravila stomatološke struke.
 </div>
 <div class="djelomicneProteze">
 <p class="opisProteze">
-<span class="text-secondary">Djelomične (parcijalne) proteze</span> su pomične proteze koje nadomještaju djelomični gubitak zuba, izrađene su od kombinacije akrilata i metala pa su skuplje od potpunih, a mogu biti raličito izvedene i  kombinirane sa fiksnim protezama (krunicama i mostovima. Svima je zajedničko da se vade iz usta.
+<span class="text-secondary">Djelomične (parcijalne) proteze</span> su pomične proteze koje nadomještaju djelomični gubitak zuba, izrađene su od kombinacije akrilata i metala pa su skuplje od potpunih, a mogu biti raličito izvedene i  kombinirane sa fiksnim protezama (krunicama i mostovima). Svima je zajedničko da se vade iz usta.
 </p>
 </div>
 </div>

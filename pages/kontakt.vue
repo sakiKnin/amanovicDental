@@ -4,22 +4,12 @@
 <div class="kartaImage">
 <div v-bind:class="classKarta" @click="togglePic()"></div>
 </div>
-<div class="kontakt-heading">
-	<p class="opisKontakt">
-	Ordinacija dentalne medicine <span class="text-secondary">Nedjeljko Amanović, dr. med. dent</span> je privatna ordinacija, koja je ujedno i ugovorna 		stomatološka ordinacija HZZO-a od <span class="text-secondary">01.08.2008.</span>
-	</p> 
-	<p class="opisKontakt">
-	 U ordinaciji pružamo sve stomatološke usluge iz košarice osnovnog osiguranja HZZO-a , te usluge izvan 		     		 košarice osnovnog osiguranja.
-        </p> 
-	<p class="opisKontakt">
-        Vaš dentalni tim vodi <span class="text-secondary">Nedjeljko Amanović, med. dent., </span>sa asistenticom <span class="text-secondary">Nevenka Kurbalija ms.</span>
-	</p>
-</div>
 </div>
 <nuxt-link to="/cjenik" class="navLink">Cjenik</nuxt-link>
 <div class="boxes">
 <div><span class="text-secondary">Mobitel: </span> (+385) (0)917861187</div> 
-<div><span class="text-secondary">Telefon: </span> (+385) (0)22492111</div> 
+<div><span class="text-secondary">Telefon: </span> (+385) (0)22492111</div>
+<div><span class="text-secondary">Email: </span> dr.amanovic@ordinacija-amanovic.hr</div>
 <div><span class="text-secondary">Adresa: </span> 22300 Knin, Meštrovićeva 7</div>
 </div> 
 <div class="radnoVrijeme">
@@ -87,12 +77,7 @@ $secondary-color: #eece1a;
 	color: #fff;
 	height: 100vh;
 	.menuKontakt{
-		display: grid;
-		grid-gap: 10px;
-		grid-template-areas:
-	   		'kartaImg kontakt-heading';
 	 
-		grid-template-columns: repeat(2, 1fr);
 	
 	.kontaktImg{
 		display: flex;
@@ -104,15 +89,7 @@ $secondary-color: #eece1a;
 	
 
 		}
-	.kontakt-heading{
-		 background: lighten($primary-color, 5);
-    		 padding: 0.2rem;
-    		 border-bottom: $secondary-color 5px solid;
-		 margin-bottom:0.5rem;
-		 color: #fff;
-		 
-
-		}
+	 
 	}
 	.malaKarta{
 		width: 150px;
@@ -171,7 +148,7 @@ $secondary-color: #eece1a;
 	padding: 2vh;
 	background: rgba(lighten($primary-color, 5), 0.9);
 	color: #fff;
-	height: 100%;
+	height: 100vh;
 	font-size: 1rem;
 	.menuKontakt{
 		display: grid;
