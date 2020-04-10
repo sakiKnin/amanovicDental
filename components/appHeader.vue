@@ -7,7 +7,7 @@
       <div class="btn-line"></div>
     </div>
 	
-    <div class="homeBtn" v-bind:class="{'show': getUslugeFlag||getRadoviFlag||getKontaktFlag||!getNaslovnaFlag}" @click="home()"><font-awesome-icon :icon="['fas', 'home']"/></i></div>
+    <div class="homeBtn" v-bind:class="{'show': getUslugeFlag||getRadoviFlag||getKontaktFlag}" @click="home()"><font-awesome-icon :icon="['fas', 'home']"/></i></div>
 			 
     <nav class="menu" v-bind:class="{'show': getMenuFlag}">
       <div class="menu-branding" v-bind:class="{'show': getMenuFlag}">
@@ -46,7 +46,7 @@ import { mapGetters, mapActions } from 'vuex';
 export default{
 	name: 'appHeader',
 
-	computed: mapGetters(['getMenuFlag', 'getNaslovnaFlag','getUslugeFlag', 'getRadoviFlag', 'getKontaktFlag']),
+	computed: mapGetters(['getMenuFlag', 'getNaslovnaFlag', 'getUslugeFlag', 'getRadoviFlag', 'getKontaktFlag']),
 
 	data(){
 		return{

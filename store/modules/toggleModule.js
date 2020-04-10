@@ -61,8 +61,13 @@ const toggleModule = {
 		setNaslovnaFlag({commit}, value){
 			this.stateBefore = "naslovna";
 			this.naslovnaFlag = value;
-			console.log("naslovna flag:", this.naslovnaFlag);
+			this.uslugeFlag = false;
+			this.radoviFlag = false;
+			this.kontaktFlag = false;
 		 	commit('setNaslovna',value);
+			commit('setUsluge', false);
+			commit('setRadovi', false);
+			commit('setKontakt', false);
 		},
 		setUslugeFlag({commit}, value){
 			this.stateBefore = "usluge";
