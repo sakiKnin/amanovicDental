@@ -2,7 +2,7 @@
 
 > Amanovic dental website
 
-# https://www.amanovic-dentl.hr
+# https://www.amanovic-dental.hr
 
 ## Build Setup
 
